@@ -71,7 +71,7 @@ export function Footer() {
             <h3 className="font-semibold text-foreground mb-4">Follow Us</h3>
             <div className="flex gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/17bWC2rP2C/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate active-elevate-2 rounded-md p-2 border border-border"
@@ -80,7 +80,7 @@ export function Footer() {
                 <Facebook className="h-5 w-5 text-primary" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/nhrf_official?igsh=NXdldGN5dnFqcGI5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate active-elevate-2 rounded-md p-2 border border-border"
@@ -89,7 +89,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5 text-primary" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/national-human-resource-foundation/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate active-elevate-2 rounded-md p-2 border border-border"
@@ -98,7 +98,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5 text-primary" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://youtube.com/@tamilmatrix?si=99I7G2uiwQel5PDm"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate active-elevate-2 rounded-md p-2 border border-border"
