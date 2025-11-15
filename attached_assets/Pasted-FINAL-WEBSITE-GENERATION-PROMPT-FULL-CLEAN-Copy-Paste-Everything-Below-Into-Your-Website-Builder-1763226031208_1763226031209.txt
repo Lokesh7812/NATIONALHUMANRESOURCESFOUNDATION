@@ -1,0 +1,303 @@
+FINAL WEBSITE GENERATION PROMPT (FULL & CLEAN)
+Copy–Paste Everything Below Into Your Website Builder / AI Generator
+📌 PROJECT: Complete Website for National Human Resource Foundation (NHRF)
+
+Create a fully responsive, modern, smooth-animated website with the following detailed structure.
+
+🎨 GENERAL DESIGN INSTRUCTIONS
+
+Professional white theme with blue (#1E88E5) & green (#2ECC71) accents (matching logo brand colors).
+
+Use clean fonts, modern layout, and structured spacing.
+
+Add smooth page transitions, fade-ins, scroll animations, counters, and section reveals.
+
+All images should have temporary placeholders — I will upload actual images later.
+
+All project cards must be clickable, opening dedicated pages.
+
+Add loading animation with the NHRF initials/logo shape.
+
+Use filter system in the Gallery page (Sports / School Programs / Community / Camps / Achievements / Job Fairs).
+
+No contact form required.
+
+🏠 1. HOME PAGE
+A. Banner / Hero Section
+
+Title: “Empowering Students. Transforming Schools. Strengthening Communities.”
+
+Subtitle:
+“NHRF is a Govt-registered NGO dedicated to Sports, Education & Employment development across India.”
+
+Buttons:
+Explore Projects | Contact Us
+
+Background: soft gradient or clean white + subtle animation layer.
+
+B. Short NGO Introduction Section
+
+Paragraph:
+
+National Human Resource Foundation (NHRF) is a registered NGO based in Pondicherry, India (Reg. No. 1093/IV/2020). Since 2019, NHRF has been empowering children, youth, and communities through structured programs in Sports, Education, Employment, Skill Development, Environment, and Awareness. Our mission is to uplift underprivileged students, promote sports excellence, and build a confident, drug-free younger generation.
+
+C. Quick Links to Projects (Clickable Cards)
+
+Cards with icons + hover effects:
+
+Project SPORTA – Sports development in schools
+
+Portal Chanakya – School improvement & skill development
+
+Employment Wing – Job network & youth placement
+
+Community Development Programs – Awareness drives & camps
+
+Each card must link to the Projects Page.
+
+D. Impact Numbers (Animated Counters)
+
+Add animated counter boxes for these values:
+
+1,774+ students trained through Project SPORTA
+
+15+ schools currently under sports training
+
+10,00,000+ job seekers in our network
+
+6,000+ MSMEs connected
+
+20,000+ youth placed in jobs
+
+80+ schools impacted in Water Fest
+
+110+ students benefited through Summer Camps
+
+1,024 players participated in Mero Trophy
+
+E. Recent Achievements (Horizontal Slider / Grid)
+
+List:
+
+Expanded Project SPORTA with Sri Aurobindo Society & Pondicherry Education Dept.
+
+2 students selected for State-Level Football Camp
+
+Organized Water Fest – Neerkudam across 80 schools
+
+Conducted MERO Trophy with 1,024 players
+
+400+ students trained in Drug-Awareness – Step Out Narco
+
+Skill development & job fairs for 22 colleges
+
+Forest & life-skills camp with Sadhana Forest
+
+Launched tuition & weekend centres under Mandela Initiative
+
+📄 2. ABOUT US PAGE
+Mission Section
+
+Train 1,00,000 students in sports by 2030
+
+Convert 1,000 schools into Centres of Excellence
+
+Empower underprivileged youth
+
+Promote a drug-free generation
+
+Create equal opportunity for all students
+
+Vision Section
+
+To build an India where every child and youth has access to quality sports training, education, skill development, and life-changing opportunities regardless of economic background.
+
+Story Section
+
+Add a timeline-style layout.
+Story content exactly as provided.
+
+Objectives Section
+
+Add bullet-style or numbered layout with icons for all 6 objectives.
+
+Areas of Specialization
+
+SPORTS
+
+EDUCATION
+
+EMPLOYMENT
+
+Services Section
+1) Project SPORTA – Sports Wing
+
+Full description & beneficiaries (given text).
+
+2) Portal Chanakya – Education Wing
+
+Full description & beneficiaries.
+
+3) Employment Wing
+
+Full description + statistics + beneficiaries.
+
+Founder Message Section
+
+Include quote with founder portrait placeholder.
+
+Leadership Team Section
+
+Use cards with photos (placeholders) + details:
+
+Managing Trustee — Dr. R. Ravivarman
+
+Board of Trustees (all 5 individuals)
+
+Core Contributor (Optional): R. Vijayaraghavan
+
+🧭 3. SERVICES / FOCUS AREAS PAGE
+
+4-category layout with icons:
+
+Education
+
+Sports
+
+Employment
+
+Community Development
+
+Each category must expand or link to inner pages.
+
+📁 4. PROJECTS PAGE
+
+Create TWO SEPARATE GROUPS:
+
+A. MAIN PROJECTS (3 Pages Required)
+
+Each must have a dedicated standalone page:
+
+Project SPORTA
+
+Portal Chanakya
+
+Employment Wing
+
+B. ACTIVITIES / COMPLETED WORKS (11 Items)
+
+Each item should also open a separate details page:
+
+Water Fest – Neerkudam
+
+Step Out Narco (Drug Awareness)
+
+Mandela Initiative – Tuition Centres
+
+Mero Trophy Football League
+
+Forest & Life-Skills Camp
+
+Summer Camps
+
+Career Guidance & Entrepreneurship Programs
+
+School Development – Portal Chanakya
+
+College Job Fairs (22 colleges)
+
+Talent Identification Programs
+
+Community Awareness Drives
+
+Each page must include:
+
+Hero title
+
+Image placeholder
+
+Description
+
+Impact numbers
+
+Gallery preview
+
+🖼️ 5. GALLERY PAGE
+
+Filter System required
+Filters:
+Sports Events | School Programs | Camps & Workshops | Job Fairs | Community Activities | Achievements
+
+Use clean masonry layout with hover effects
+
+All images should display placeholders
+
+⭐ 6. TESTIMONIALS PAGE
+
+Add slider or grid:
+
+Student testimonial
+
+Teacher testimonial
+
+Parent testimonial
+
+🤝 7. OUR PARTNERS PAGE
+
+Show logo grid with one-line descriptions for:
+
+Sri Aurobindo Society
+
+Government of Puducherry
+
+EATON
+
+Khelo India
+
+IKF India
+
+Rotary International
+
+PondyCAN
+
+📍 8. CONTACT PAGE
+
+NO contact form.
+Include:
+
+Address
+26, Thee Mithi Street, Thilaspet, Pondicherry – 605 009, India
+
+Email
+operations@nationalhrfoundation.org
+
+Phone
+0413-2900716
+
+WhatsApp
++91 79038 40717
++91 99433 91650
+
+Google Map Embed
+(Use link provided)
+
+Social Media Links
+Facebook, Instagram, LinkedIn, YouTube
+
+✔️ FINAL TECHNICAL REQUIREMENTS
+
+Fully responsive (mobile, tablet, desktop)
+
+SEO-optimized page structure
+
+Smooth transitions
+
+Optimized loading animation
+
+Clean typography
+
+Icons for each service / project
+
+Placeholder images everywhere
+
+Easy to replace content later
