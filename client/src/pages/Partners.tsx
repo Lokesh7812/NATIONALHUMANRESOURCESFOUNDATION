@@ -6,30 +6,37 @@ export default function Partners() {
     {
       name: 'Sri Aurobindo Society',
       description: 'Educational and cultural organization supporting our sports and development programs',
+      logo: '/partners/sri society.png',
     },
     {
       name: 'Government of Puducherry',
       description: 'Official partner for education and sports initiatives across the territory',
+      logo: '/partners/governmant of puducherry.png',
     },
     {
       name: 'EATON',
       description: 'Corporate partner supporting infrastructure and community development',
+      logo: '/partners/eaton.png',
     },
     {
       name: 'Khelo India',
       description: 'National program for development of sports partnering in talent identification',
+      logo: '/partners/khelo india.jpg',
     },
     {
       name: 'IKF India',
       description: 'Indian Kabbadi Federation collaborating in sports training programs',
+      logo: '/partners/IKF.png',
     },
     {
       name: 'Rotary International',
       description: 'Service organization supporting community welfare and youth empowerment',
+      logo: '/partners/Rotary.png',
     },
     {
       name: 'PondyCAN',
       description: 'Pondicherry Cancer Network partnering in health awareness campaigns',
+      logo: '/partners/pondycan.jpg',
     },
   ];
 
@@ -68,12 +75,12 @@ export default function Partners() {
             {partners.map((partner, index) => (
               <Card key={index} className="text-center hover-elevate transition-all duration-300 border-card-border">
                 <CardContent className="p-8">
-                  <div className="h-24 flex items-center justify-center mb-6">
-                    <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-3xl font-bold text-primary">
-                        {partner.name.split(' ').map(word => word[0]).join('').slice(0, 3)}
-                      </span>
-                    </div>
+                  <div className="h-32 flex items-center justify-center mb-6">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-24 max-w-full object-contain"
+                    />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{partner.name}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
