@@ -1,18 +1,56 @@
-import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const users = pgTable("users", {
-  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
-  username: text("username").notNull().unique(),
-  password: text("password").notNull(),
-});
+// Project types
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  category: 'main' | 'activity';
+  fullDescription?: string;
+  impact?: string[];
+  beneficiaries?: string;
+}
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
-});
+export interface ImpactStat {
+  value: string;
+  label: string;
+  icon: string;
+}
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
+export interface Achievement {
+  title: string;
+  description: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+}
+
+export interface Testimonial {
+  quote: string;
+  author: string;
+  role: string;
+  image?: string;
+}
+
+export interface Partner {
+  name: string;
+  description: string;
+  logo?: string;
+}
+
+export interface GalleryImage {
+  url: string;
+  alt: string;
+  category: 'sports' | 'school' | 'camps' | 'jobfairs' | 'community' | 'achievements';
+}
+
+export interface TimelineItem {
+  year: string;
+  title: string;
+  description: string;
+}
