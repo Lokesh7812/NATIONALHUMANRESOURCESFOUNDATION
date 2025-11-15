@@ -227,6 +227,333 @@
   .fade-out {
     animation: fade-in 0.5s ease-out reverse;
   }
+
+  /* Page Transitions */
+  @keyframes slide-up-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes overlay-wipe {
+    from {
+      opacity: 0;
+      clip-path: circle(0% at 50% 50%);
+    }
+    to {
+      opacity: 1;
+      clip-path: circle(150% at 50% 50%);
+    }
+  }
+
+  @keyframes blur-reveal {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  @keyframes shutter-open {
+    from {
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+  }
+
+  @keyframes circular-mask {
+    from {
+      opacity: 0;
+      clip-path: circle(0% at center);
+    }
+    to {
+      opacity: 1;
+      clip-path: circle(150% at center);
+    }
+  }
+
+  /* Section Animations */
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scale-up {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rotate-fade {
+    from {
+      opacity: 0;
+      transform: rotate(2deg) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+  }
+
+  /* Card Hover Effects */
+  @keyframes card-lift {
+    from {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    to {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @keyframes hover-zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes tilt {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(1deg);
+    }
+    75% {
+      transform: rotate(-1deg);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  /* Counter Animations */
+  @keyframes number-flip {
+    from {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes spark-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+  }
+
+  /* Hero Animations */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes letter-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+  /* Utility Classes */
+  .animate-slide-up-reveal {
+    animation: slide-up-reveal 0.6s ease-out;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 0.6s ease-out;
+  }
+
+  .animate-zoom-in {
+    animation: zoom-in 0.6s ease-out;
+  }
+
+  .animate-overlay-wipe {
+    animation: overlay-wipe 0.8s ease-out;
+  }
+
+  .animate-blur-reveal {
+    animation: blur-reveal 0.7s ease-out;
+  }
+
+  .animate-shutter-open {
+    animation: shutter-open 0.6s ease-out;
+  }
+
+  .animate-circular-mask {
+    animation: circular-mask 0.8s ease-out;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.7s ease-out;
+    animation-fill-mode: both;
+  }
+
+  .animate-scale-up {
+    animation: scale-up 0.6s ease-out;
+  }
+
+  .animate-rotate-fade {
+    animation: rotate-fade 0.7s ease-out;
+  }
+
+  .card-hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover-lift:hover {
+    animation: card-lift 0.3s ease-out forwards;
+  }
+
+  .hover-zoom-in {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-zoom-in:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-tilt {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-tilt:hover {
+    animation: tilt 0.5s ease-in-out;
+  }
+
+  .shimmer-loading {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .number-flip {
+    animation: number-flip 0.6s ease-out;
+  }
+
+  .spark-glow {
+    animation: spark-glow 2s ease-in-out infinite;
+  }
+
+  .ripple-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .ripple-effect:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Parallax Effect */
+  .parallax {
+    will-change: transform;
+  }
 }
 
 /**

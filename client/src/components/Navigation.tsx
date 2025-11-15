@@ -33,21 +33,21 @@ export function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-sm'
-          : 'bg-transparent'
+          : 'lg:bg-background/95 lg:backdrop-blur-md lg:border-b lg:border-border lg:shadow-sm bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover-elevate active-elevate-2 rounded-md px-2 py-1">
             <img
               src="/nhrf-logo.png"
               alt="NHRF Logo"
-              className="h-10 md:h-12 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
-            <div className="hidden sm:block">
-              <div className="text-lg md:text-xl font-bold text-primary leading-tight">NHRF</div>
-              <div className="text-xs text-muted-foreground leading-tight">Empowering Communities</div>
+            <div className="flex flex-col">
+              <div className="text-[10px] sm:text-xs md:text-sm lg:text-base font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
+              <div className="text-[9px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Empowering Communities</div>
             </div>
           </Link>
 
@@ -64,15 +64,7 @@ export function Navigation() {
                 </Button>
               </Link>
             ))}
-            <Link href="/contact">
-              <Button
-                size="default"
-                className="ml-2 bg-primary text-primary-foreground hover:bg-primary/90"
-                data-testid="button-contact-cta"
-              >
-                Contact Us
-              </Button>
-            </Link>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,11 +84,11 @@ export function Navigation() {
                   <img
                     src="/nhrf-logo.png"
                     alt="NHRF Logo"
-                    className="h-12 w-auto"
+                    className="h-20 w-auto"
                   />
                   <div>
-                    <div className="text-lg font-bold text-primary">NHRF</div>
-                    <div className="text-xs text-muted-foreground">National Human Resource Foundation</div>
+                    <div className="text-sm font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
+                    <div className="text-xs text-muted-foreground leading-tight">Empowering Communities</div>
                   </div>
                 </div>
                 {navItems.map((item) => (

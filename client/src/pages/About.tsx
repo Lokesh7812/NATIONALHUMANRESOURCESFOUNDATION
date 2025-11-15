@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { SectionHeader } from '@/components/SectionHeader';
+import { ScrollFade } from '@/components/ScrollFade';
 import { 
   Target, Eye, Users, GraduationCap, Briefcase, 
   Heart, TrendingUp, Award, CheckCircle, Lightbulb 
@@ -59,9 +60,10 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="rounded-full bg-primary/10 p-3">
@@ -107,13 +109,15 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </ScrollFade>
 
       {/* Story Timeline */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
             title="Our Journey"
             subtitle="From vision to impact - the NHRF story"
             centered
@@ -141,13 +145,15 @@ export default function About() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </ScrollFade>
 
       {/* Objectives */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
             title="Our Objectives"
             subtitle="Guiding principles that drive our mission forward"
             centered
@@ -167,13 +173,15 @@ export default function About() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </ScrollFade>
 
       {/* Areas of Specialization */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
             title="Areas of Specialization"
             centered
           />
@@ -200,13 +208,15 @@ export default function About() {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </ScrollFade>
 
       {/* Founder Message */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
             <Card className="border-card-border">
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -226,14 +236,16 @@ export default function About() {
                 </div>
               </CardContent>
             </Card>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </ScrollFade>
 
       {/* Leadership Team */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
+      <ScrollFade>
+        <section className="py-16 md:py-24 bg-muted/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
             title="Our Leadership"
             subtitle="Dedicated professionals driving positive change"
             centered
@@ -253,8 +265,9 @@ export default function About() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </ScrollFade>
     </div>
   );
 }

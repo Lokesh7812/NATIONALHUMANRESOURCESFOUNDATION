@@ -25,16 +25,16 @@ export default function Contact() {
     {
       icon: MessageSquare,
       title: 'WhatsApp',
-      content: '+91 79038 40717 / +91 99433 91650',
-      link: 'https://wa.me/917903840717',
+      content: '+91 79038 40716 / +91 99433 91650',
+      link: 'https://wa.me/917903840716',
     },
   ];
 
   const socialMedia = [
-    { name: 'Facebook', icon: Facebook, url: 'https://facebook.com', color: 'hover:text-blue-600' },
-    { name: 'Instagram', icon: Instagram, url: 'https://instagram.com', color: 'hover:text-pink-600' },
-    { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com', color: 'hover:text-blue-700' },
-    { name: 'YouTube', icon: Youtube, url: 'https://youtube.com', color: 'hover:text-red-600' },
+    { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/share/17bWC2rP2C/', color: 'hover:text-blue-600' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/nhrf_official?igsh=NXdldGN5dnFqcGI5', color: 'hover:text-pink-600' },
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/national-human-resource-foundation/', color: 'hover:text-blue-700' },
+    { name: 'YouTube', icon: Youtube, url: 'https://youtube.com/@tamilmatrix?si=99I7G2uiwQel5PDm', color: 'hover:text-red-600' },
   ];
 
   return (

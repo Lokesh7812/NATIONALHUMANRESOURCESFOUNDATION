@@ -59,8 +59,13 @@ export function CounterBox({ value, label, icon: Icon }: CounterBoxProps) {
   return (
     <Card
       ref={ref}
-      className="p-6 text-center hover-elevate transition-all duration-300 border-card-border"
+      className={`p-6 text-center hover-elevate transition-all duration-300 border-card-border ${
+        isVisible ? 'animate-fade-up' : 'opacity-0 translate-y-8'
+      }`}
       data-testid={`counter-${label.toLowerCase().replace(/\s+/g, '-')}`}
+      style={{
+        transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
+      }}
     >
       <div className="flex flex-col items-center gap-3">
         <div className="rounded-full bg-primary/10 p-3">
