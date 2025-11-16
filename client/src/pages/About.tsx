@@ -45,9 +45,10 @@ export default function About() {
 
 
  const objectives = [
+  { icon: Users, title: 'Employment Exchange Hub', description: 'Establish a nationwide Employment Exchange Hub' },
   { icon: Target, title: 'Job Creation', description: 'Support 5 lakh job seekers by 2030' },
   { icon: Target, title: 'Sports Excellence', description: 'Train 1 lakh talents in sports by 2030' },
-  { icon: Users, title: 'Employment Exchange Hub', description: 'Establish a nationwide Employment Exchange Hub' },
+  
   { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence' },
   { icon: Heart, title: 'Women Empowerment', description: 'Enable 1,000 women entrepreneurs by 2030' },
 ];

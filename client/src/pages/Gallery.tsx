@@ -67,8 +67,15 @@ export default function Gallery() {
   const categoryTypes: Exclude<Category, 'all'>[] = ['sports', 'school', 'camps', 'jobfairs', 'community', 'achievements'];
   
   const galleryImages = galleryImageFiles.map((filename, index) => {
-    // Distribute images across categories evenly
-    const category = categoryTypes[index % categoryTypes.length];
+    // Assign s1.jpg and s2.jpg to achievements category
+    let category: Category;
+    if (filename === 's1.jpg' || filename === 's2.jpg') {
+      category = 'achievements';
+    } else {
+      // Distribute other images across categories evenly
+      category = categoryTypes[index % categoryTypes.length];
+    }
+    
     const altText = `NHRF Activity - ${filename.replace(/\.(jpg|jpeg|JPG|JPEG)$/i, '').replace(/[-_]/g, ' ')}`;
     
     return {
