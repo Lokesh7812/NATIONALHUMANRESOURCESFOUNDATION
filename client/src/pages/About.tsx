@@ -38,7 +38,7 @@ export default function About() {
       name: 'V. Mohandass', 
       role: 'Trustee', 
       image: '/members/Mohandass_V%20.jpg', 
-      bio: 'An Mechanical Engineer who having 12+ years of experience in football career - expertised in designing football training modules and programs - Managing the sports wing of NHRF.' 
+      bio: 'A seasoned Mechanical Engineer with over 12 years of experience, he is now channeling his expertise into the development of football. He oversees the strategic design and implementation of effective football training modules and programs. As the manager of the entire NHRF Sports Wing, he is deeply committed to using Genesis Football Club as a platform to identify, nurture, and develop talented village football players by providing them with free and accessible opportunities.' 
     },
     { 
       name: 'A.P Tharun', 

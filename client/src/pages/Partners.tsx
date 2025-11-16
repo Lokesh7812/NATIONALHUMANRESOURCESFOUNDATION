@@ -4,9 +4,9 @@ import { SectionHeader } from '@/components/SectionHeader';
 export default function Partners() {
   const partners = [
     {
-      name: 'Sri Aurobindo Society',
-      description: 'Educational and cultural organization supporting our sports and development programs',
-      logo: '/partners/sri society.png',
+      name: 'Rotary International',
+      description: 'Service organization supporting community welfare and youth empowerment',
+      logo: '/partners/Rotary.png',
     },
     {
       name: 'Government of Puducherry',
@@ -19,19 +19,19 @@ export default function Partners() {
       logo: '/partners/eaton.png',
     },
     {
-      name: 'Khelo India',
-      description: 'National program for development of sports partnering in talent identification',
-      logo: '/partners/khelo india.jpg',
-    },
-    {
       name: 'IKF India',
       description: 'Indian Kabbadi Federation collaborating in sports training programs',
       logo: '/partners/IKF.png',
     },
     {
-      name: 'Rotary International',
-      description: 'Service organization supporting community welfare and youth empowerment',
-      logo: '/partners/Rotary.png',
+      name: 'Khelo India',
+      description: 'National program for development of sports partnering in talent identification',
+      logo: '/partners/khelo india.jpg',
+    },
+    {
+      name: 'Sri Aurobindo Society',
+      description: 'Educational and cultural organization supporting our sports and development programs',
+      logo: '/partners/sri society.png',
     },
     {
       name: 'PondyCAN',
