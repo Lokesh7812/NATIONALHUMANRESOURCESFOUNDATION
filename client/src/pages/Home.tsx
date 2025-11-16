@@ -50,13 +50,18 @@ export default function Home() {
     },
     {
       title: 'Drug-Awareness Campaign',
-      description: '400+ students trained in Step Out Narco program',
+      description: '500+ students trained in Step Out Narco program',
       icon: CheckCircle,
     },
     {
       title: 'Skill Development',
       description: 'Job fairs for 22 colleges empowering youth',
       icon: GraduationCap,
+    },
+    {
+      title: 'National Level Boxing',
+      description: 'Subiksha achieved national level recognition in boxing',
+      icon: Trophy,
     },
   ];
 
@@ -84,13 +89,13 @@ export default function Home() {
         {/* Hero Content with Fade-Up Animation */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-white mb-6 animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
-            Empowering Students.
+            Empowering Students
             <br />
-            Transforming Schools.
+            Transforming Schools
             <br />
             <span className="text-primary">
               <TypingAnimation 
-                text="Strengthening Communities." 
+                text="Strengthening Communities" 
                 speed={80}
                 delay={800}
                 className="inline-block"
@@ -98,7 +103,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
-            NHRF is a Govt-registered NGO dedicated to Sports, Education & Employment development across India.
+            NHRF is a Government registered NGO dedicated to Employability, Sports & Education development across India.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
             <Link href="/projects">
@@ -126,10 +131,7 @@ export default function Home() {
                 centered
               />
               <p className="text-base md:text-lg text-foreground leading-relaxed mb-8">
-                National Human Resource Foundation (NHRF) is a registered NGO based in Pondicherry, India (Reg. No. 1093/IV/2020). 
-                Since 2019, NHRF has been empowering children, youth, and communities through structured programs in Sports, Education, 
-                Employment, Skill Development, Environment, and Awareness. Our mission is to uplift underprivileged students, promote 
-                sports excellence, and build a confident, drug-free younger generation.
+                National Human Resource Foundation (NHRF) is a registered NGO based in Pondicherry, India (Reg. No. 1093/IV/2020). Since 2019, NHRF has been empowering children, youth, and communities through structured programs in Employability, Sports, Education, Women Empowerment, Skill Development, Health, Environment, and Agriculture. Our main mission is to uplift underprivileged students, promote sports excellence, and build a confident drug-free younger generation.
               </p>
             </div>
           </div>
@@ -146,10 +148,18 @@ export default function Home() {
               centered
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+              <div className="animate-fade-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+              <ProjectCard
+                id="employment"
+                title="Employment "
+                description="Job network & youth placement opportunities"
+                image={employmentIcon}
+              />
+            </div>
             <div className="animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
               <ProjectCard
                 id="sporta"
-                title="Project SPORTA"
+                title="Sports"
                 description="Sports development & training in schools across India"
                 image={sportaIcon}
               />
@@ -157,19 +167,12 @@ export default function Home() {
             <div className="animate-fade-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
               <ProjectCard
                 id="portal-chanakya"
-                title="Portal Chanakya"
+                title="Education"
                 description="School improvement & comprehensive skill development"
                 image={chanakyaIcon}
               />
             </div>
-            <div className="animate-fade-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
-              <ProjectCard
-                id="employment"
-                title="Employment Wing"
-                description="Job network & youth placement opportunities"
-                image={employmentIcon}
-              />
-            </div>
+            
             <div className="animate-fade-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
               <ProjectCard
                 id="community"
@@ -193,16 +196,18 @@ export default function Home() {
             centered
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mt-12">
-            <CounterBox value="1,774+" label="Students Trained (SPORTA)" icon={Users} />
-            <CounterBox value="15+" label="Schools Under Training" icon={GraduationCap} />
-            <CounterBox value="10,00,000+" label="Job Seekers in Network" icon={Users} />
+            <CounterBox value="1,774+" label="Students Trained under SPORTA" icon={Users} />
+            <CounterBox value="25+" label="Schools Under Training" icon={GraduationCap} />
+            <CounterBox value="2,00,000+" label="Job Seekers in Network" icon={Users} />
             <CounterBox value="6,000+" label="MSMEs Connected" icon={Briefcase} />
             <CounterBox value="20,000+" label="Youth Placed in Jobs" icon={Trophy} />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <CounterBox value="80+" label="Schools (Water Fest)" icon={Heart} />
+            <CounterBox value="80+" label="Schools implemented Water Fest" icon={Heart} />
             <CounterBox value="110+" label="Summer Camp Beneficiaries" icon={Users} />
             <CounterBox value="1,024" label="MERO Trophy Participants" icon={Award} />
+            <CounterBox value="500+" label="Drug Awareness" icon={CheckCircle} />
+            <CounterBox value="220+" label="IKF Trails Talents" icon={Target} />
           </div>
           </div>
         </section>

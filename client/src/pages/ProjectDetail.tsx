@@ -259,8 +259,8 @@ The success and social value of Tamil Matrix directly inspired the founding of N
     },
     'sporta': {
       title: 'Project SPORTA',
-      subtitle: 'A Flagship Sports Development Initiative - Transforming Government Schools into Sports-Driven Learning Ecosystems',
-      description: 'Project SPORTA is a flagship sports development initiative by NHRF that transforms Government schools into sports-driven learning ecosystems, integrating professional sports training with career awareness, drug prevention, and leadership development.',
+      subtitle: 'A Flagship Sports Development Initiative - Transforming Schools into Sports-Driven Learning Ecosystems',
+      description: 'Project SPORTA is a flagship sports development initiative by NHRF that transforms schools into sports-driven learning ecosystems, integrating professional sports training with career awareness, drug prevention, and leadership development.',
       fullDescription: `About NHRF
 
 The National Human Resource Foundation (NHRF) is a registered NGO (Reg. 2020) based in Puducherry. Our work focuses on Sports & Health, Education, and Employability & Youth Development. We aim to bridge gaps in opportunity and create structured pathways for young people to achieve excellence.
@@ -370,7 +370,7 @@ Project SPORTA transforms raw talent into disciplined achievers, taking students
     },
     'portal-chanakya': {
       title: 'CHANAKYA PORTAL',
-      subtitle: 'Reimagining Government Schools (2023, 2024)',
+      subtitle: 'Reimagining Government Schools infrastructure improvement and comprehensive development (2023, 2024)',
       description: 'The Chanakya Portal is a holistic initiative to uplift government schools by improving infrastructure, classroom design, digital learning, teacher training, and student talent development.',
       fullDescription: `Beneficiary Schools
 

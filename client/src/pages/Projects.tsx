@@ -26,12 +26,19 @@ export default function Projects() {
       description: 'A digital movement that inspired the birth of NHRF - A youth-led initiative connecting 2,700+ job seekers across 35 district groups in Tamil Nadu, Puducherry & Karnataka.',
       image: employmentIcon,
     },
+     {
+      id: 'employment',
+      title: 'Employment Exchange Hub',
+      description: 'Job network connecting 10,00,000+ job seekers with 6,000+ MSMEs, placing 20,000+ youth in meaningful careers.',
+      image: employmentIcon,
+    },
     {
       id: 'sporta',
       title: 'Project SPORTA',
       description: 'Flagship sports development initiative transforming 15 Government schools into sports-driven learning ecosystems, training 700+ students (Aged 13–17).',
       image: sportaIcon,
     },
+   
     {
       id: 'step-out-narco',
       title: 'Step Out Narco',
@@ -44,12 +51,7 @@ export default function Projects() {
       description: 'Reimagining the future of Government schools through infrastructure, digital learning, and holistic development.',
       image: chanakyaIcon,
     },
-    {
-      id: 'employment',
-      title: 'Employment Wing',
-      description: 'Job network connecting 10,00,000+ job seekers with 6,000+ MSMEs, placing 20,000+ youth in meaningful careers.',
-      image: employmentIcon,
-    },
+    
   ];
 
   const activities = [
@@ -146,9 +148,9 @@ export default function Projects() {
         <section className="bg-gradient-to-br from-primary/10 via-background to-background py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">Our Projects & Activities</h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">Our Projects & Initiatives </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
-                Comprehensive programs and initiatives (2020-2025) driving positive change in communities across India
+                Comprehensive programs and initiatives (2019-Present) driving positive change in communities across India
               </p>
             </div>
           </div>

@@ -46,8 +46,8 @@ export function Navigation() {
               className="h-16 md:h-20 w-auto"
             />
             <div className="flex flex-col">
-              <div className="text-xs sm:text-xs md:text-sm lg:text-base font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
-              <div className="text-[9px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Empowering Communities</div>
+              <div className="text-xs sm:text-xs md:text-sm lg:text-base font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCE FOUNDATION</div>
+              <div className="text-[9px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Evolving Next Future</div>
             </div>
           </Link>
 
@@ -88,7 +88,7 @@ export function Navigation() {
                   />
                   <div>
                     <div className="text-sm font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
-                    <div className="text-xs text-muted-foreground leading-tight">Empowering Communities</div>
+                    <div className="text-xs text-muted-foreground leading-tight">Evolving Next Future</div>
                   </div>
                 </div>
                 {navItems.map((item) => (

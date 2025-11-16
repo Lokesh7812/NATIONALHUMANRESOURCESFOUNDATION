@@ -6,6 +6,19 @@ import { Award, GraduationCap, Briefcase, Heart } from 'lucide-react';
 export default function Services() {
   const services = [
     {
+      icon: Briefcase,
+      title: 'Employment Services',
+      subtitle: 'Connecting youth with career opportunities',
+      description: 'Our employment wing bridges the gap between job seekers and employers, providing career guidance and placement services.',
+      highlights: [
+        'Job fairs at colleges and institutions',
+        'Career counseling and guidance',
+        'Skill training for employability',
+        'Industry connections and networking',
+        'Placement assistance and follow-up',
+      ],
+    },
+    {
       icon: Award,
       title: 'Sports Development',
       subtitle: 'Building athletic excellence and healthy lifestyles',
@@ -31,19 +44,7 @@ export default function Services() {
         'Technology integration in classrooms',
       ],
     },
-    {
-      icon: Briefcase,
-      title: 'Employment Services',
-      subtitle: 'Connecting youth with career opportunities',
-      description: 'Our employment wing bridges the gap between job seekers and employers, providing career guidance and placement services.',
-      highlights: [
-        'Job fairs at colleges and institutions',
-        'Career counseling and guidance',
-        'Skill training for employability',
-        'Industry connections and networking',
-        'Placement assistance and follow-up',
-      ],
-    },
+    
     {
       icon: Heart,
       title: 'Community Development',

@@ -19,6 +19,11 @@ export default function Partners() {
       logo: '/partners/eaton.png',
     },
     {
+      name: 'APT Business Pvt Ltd',
+      description: 'APT Business Pvt Ltd is a UK-based retail company headquartered in Newcastle. The company focuses on delivering high-quality consumer products through efficient sourcing, smart distribution, and a customer-centric retail model. APT aims to bring essential goods, lifestyle products, and value-driven retail solutions to customers across multiple regions.The company operates with modern retail principles—transparent pricing, reliable supply chains, and a commitment to everyday quality',
+      logo: '/partners/apt.jpg',
+    },
+    {
       name: 'IKF India',
       description: 'Indian Kabbadi Federation collaborating in sports training programs',
       logo: '/partners/IKF.png',
@@ -38,6 +43,7 @@ export default function Partners() {
       description: 'Pondicherry Cancer Network partnering in health awareness campaigns',
       logo: '/partners/pondycan.jpg',
     },
+   
   ];
 
   return (

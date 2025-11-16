@@ -10,53 +10,79 @@ import {
 
 export default function About() {
   const timeline = [
-    { year: '2019', title: 'Foundation Established', description: 'NHRF was founded with a vision to empower underprivileged youth through sports and education.' },
-    { year: '2020', title: 'Project SPORTA Launched', description: 'Initiated comprehensive sports training programs in schools across Pondicherry.' },
-    { year: '2021', title: 'Expansion Phase', description: 'Extended programs to reach more schools and partnered with government bodies.' },
-    { year: '2022', title: 'Employment Wing Created', description: 'Launched job network connecting youth with opportunities across India.' },
-    { year: '2023', title: 'Major Milestones', description: 'Achieved significant impact with thousands of students trained and placed.' },
-    { year: '2024', title: 'Community Integration', description: 'Expanded to comprehensive community development and awareness programs.' },
+    { 
+      year: '2019', 
+      title: 'Employment Wing Created', 
+      description: 'Launched the employment wing to connect youth with job opportunities across India.' 
+    },
+    { 
+      year: '2020', 
+      title: 'Foundation Established', 
+      description: 'NHRF was formally established with a mission to empower youth and communities.' 
+    },
+    { 
+      year: '2021', 
+      title: 'Project SPORTA Launched', 
+      description: 'Introduced structured sports training programs across schools.' 
+    },
+    { 
+      year: '2022', 
+      title: 'Expansion Phase', 
+      description: 'Expanded operations, partnerships, and outreach across regions.' 
+    },
+    { 
+      year: '2023', 
+      title: 'Major Milestones', 
+      description: 'Achieved significant impact with large-scale student participation and outcomes.' 
+    },
+    { 
+      year: '2024', 
+      title: 'Community Development', 
+      description: 'Integrated community-based programs focusing on health, environment, and empowerment.' 
+    },
   ];
 
-  const objectives = [
-    { icon: Target, title: 'Sports Excellence', description: 'Train 1,00,000 students in sports by 2030' },
-    { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence' },
-    { icon: Users, title: 'Youth Empowerment', description: 'Empower underprivileged youth through skill development' },
-    { icon: Heart, title: 'Drug-Free Generation', description: 'Promote awareness and build a drug-free youth community' },
-    { icon: CheckCircle, title: 'Equal Opportunity', description: 'Create equal opportunities for all students regardless of background' },
-    { icon: TrendingUp, title: 'Sustainable Growth', description: 'Build sustainable programs for long-term community impact' },
-  ];
+
+
+ const objectives = [
+  { icon: Target, title: 'Job Creation', description: 'Support 5 lakh job seekers by 2030' },
+  { icon: Target, title: 'Sports Excellence', description: 'Train 1 lakh talents in sports by 2030' },
+  { icon: Users, title: 'Employment Exchange Hub', description: 'Establish a nationwide Employment Exchange Hub' },
+  { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence' },
+  { icon: Heart, title: 'Women Empowerment', description: 'Enable 1,000 women entrepreneurs by 2030' },
+];
+
 
   const teamMembers = [
     { 
       name: 'Dr. R. Ravivarman', 
       role: 'Founder & Director', 
       image: '/members/ravi.jpg', 
-      bio: 'Former IT software techie who holding the Masters & Doctorate in Business Administration having 12+ years of experience in football career and 6+ years of experience in HR management and non-profit industry who visionised to empower students via sports. Managing a trust & football club since 2018.' 
+      bio: 'Former IT software techie who holding the Masters & Doctorate in Business Administration having 12+ years of experience in football career and 9+ years of experience in HR management and non-profit industry who visionised to empower students via sports. Managing a trust & football club since 2018.' 
     },
     { 
       name: 'V. Mohandass', 
       role: 'Trustee', 
       image: '/members/Mohandass_V%20.jpg', 
-      bio: 'A seasoned Mechanical Engineer with over 12 years of experience, he is now channeling his expertise into the development of football. He oversees the strategic design and implementation of effective football training modules and programs. As the manager of the entire NHRF Sports Wing, he is deeply committed to using Genesis Football Club as a platform to identify, nurture, and develop talented village football players by providing them with free and accessible opportunities.' 
+      bio: 'A seasoned Mechanical Engineer with over 12 years of experience, he is now channeling his expertise into the development of football. He oversees the strategic design and implementation of effective football training modules and programs. As the director  of the entire NHRF Sports Wing, he is deeply committed to using Genesis Football Club as a platform to identify, nurture, and develop talented village football players by providing them with free and accessible opportunities.' 
     },
     { 
       name: 'A.P Tharun', 
       role: 'Trustee', 
       image: '/members/tharun.JPG', 
-      bio: 'Graduated and returned from UK - 4+ years experience in sports industry joined in our force to bring a societal change for rural students. Expertised in event management and partnership. Board of Trustee in NHRF.' 
+      bio: 'A Managing Director of APT BUSINESS PVT LTD, UK and also visionary Construction designer who completed his master’s in the United Kingdom and brings over five years of experience in the sports industry. He has joined our foundation with a deep commitment to uplift rural communities. He manages the foundation’s social media presence and  key documentation processes and ensuring our work is showcased with clarity, credibility, and impact. With his global exposure for social transformation, he is the actively building bridges with CSR leaders, foundations, corporates, and international partners to co-develop transformative programs across India.' 
     },
     { 
       name: 'S. Maheshwaran', 
       role: 'Trustee', 
       image: '/members/mageshwaran.jpg', 
-      bio: 'Information Technology & MBA graduate and the former employee of Amazon in HR Domain - who is passionate in football game joined in our NHRF team to develop rural sports. Board of Trustee in NHRF.' 
+      bio: 'Information Technology & MBA graduate and the former employee of Amazon in HR Domain - who is passionate in football game joined in our NHRF team to develop rural sports.' 
     },
     { 
       name: 'M. Subramani', 
       role: 'Trustee', 
       image: '/members/subramani.jpg', 
-      bio: 'MBA Graduate - Earlier in part of HCL - expertised in accounts and finance management - handling the whole accounts related operation of NHRF. Board of Trustee in NHRF.' 
+      bio: 'MBA Graduate - Earlier in part of HCL - expertised in accounts and finance management - handling the whole accounts related operation of NHRF.' 
     },
     { 
       name: 'K. Manikandan', 
@@ -66,13 +92,13 @@ export default function About() {
     },
     { 
       name: 'V Sivasubramanian', 
-      role: 'Team Member', 
+      role: 'Trustee', 
       image: '/members/sivasubramanian.jpg', 
       bio: 'Mechanical engineer as well as a Marine Engineer, Result Oriented With over 10 years of experience in training for competitive exams, career counselling, soft skills development as well as Placements, I lead teams to deliver impactful educational and career-focused programs.' 
     },
     { 
       name: 'R. Vijayaraghavan', 
-      role: 'Team Lead', 
+      role: 'Trustee', 
       image: '/members/r.vijayaraghavan.jpg', 
       bio: 'Team Lead at Amazon, having 5+ years of experience and expertization in team handling, event management, hardware administration.' 
     },
@@ -119,7 +145,15 @@ export default function About() {
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Train 1,00,000 students in sports by 2030</span>
+                  <span className="text-foreground">Support 5 lakh job seekers by 2030</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Train 1 lakh talents in sports by 2030</span>
+                </li>
+                <li className="flex gap-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-foreground">Establish a nationwide Employment Exchange Hub</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
@@ -127,15 +161,7 @@ export default function About() {
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Empower underprivileged youth</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Promote a drug-free generation</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Create equal opportunity for all students</span>
+                  <span className="text-foreground">Enable 1,000 women entrepreneurs by 2030</span>
                 </li>
               </ul>
             </div>
@@ -148,7 +174,7 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
               </div>
               <p className="text-lg text-foreground leading-relaxed">
-                To build an India where every child and youth has access to quality sports training, education, 
+                To build our country where every child and youth has access to quality sports training, education, 
                 skill development, and life-changing opportunities regardless of economic background. We envision 
                 a nation of confident, healthy, and skilled young people who contribute meaningfully to society.
               </p>
@@ -233,6 +259,13 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
             <Card className="text-center hover-elevate transition-all duration-300 border-card-border">
               <CardContent className="p-8">
+                <Briefcase className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-2">EMPLOYABILITY</h3>
+                <p className="text-muted-foreground">Career guidance and job placement services</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover-elevate transition-all duration-300 border-card-border">
+              <CardContent className="p-8">
                 <Award className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-2">SPORTS</h3>
                 <p className="text-muted-foreground">Comprehensive training and development programs</p>
@@ -245,13 +278,7 @@ export default function About() {
                 <p className="text-muted-foreground">School improvement and skill development</p>
               </CardContent>
             </Card>
-            <Card className="text-center hover-elevate transition-all duration-300 border-card-border">
-              <CardContent className="p-8">
-                <Briefcase className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">EMPLOYMENT</h3>
-                <p className="text-muted-foreground">Career guidance and job placement services</p>
-              </CardContent>
-            </Card>
+            
           </div>
           </div>
         </section>
@@ -272,7 +299,7 @@ export default function About() {
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Founder's Message</h3>
                     <p className="text-muted-foreground mb-4 italic">
-                      "Every child deserves the opportunity to discover their potential through sports, education, and meaningful employment. 
+                      "Every child & youth deserves the opportunity to discover their potential through sports, education, and meaningful employment. 
                       At NHRF, we are committed to breaking barriers and creating pathways for success, regardless of socioeconomic background."
                     </p>
                     <div className="font-semibold">Dr. R. Ravivarman</div>

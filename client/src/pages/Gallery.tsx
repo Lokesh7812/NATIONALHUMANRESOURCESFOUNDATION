@@ -12,6 +12,8 @@ export default function Gallery() {
   const galleryImageFiles = [
     '1.jpg',
     'home.jpg',
+    's1.jpg',
+    's2.jpg',
     'home1.jpg',
     'IMG_20230603_125843.jpg',
     'IMG_20230610_115052.jpg',
