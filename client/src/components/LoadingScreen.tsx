@@ -40,16 +40,16 @@ export function LoadingScreen() {
       data-testid="loading-screen"
     >
       <div className="flex flex-col items-center gap-8">
-        <div className="relative" aria-hidden="true">
+        <div className="relative h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 lg:h-64 lg:w-64 flex items-center justify-center" aria-hidden="true">
           <img
             src="/nhrf-logo.png"
             alt="NHRF"
-            className="h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56 lg:h-64 lg:w-64 animate-pulse"
+            className="h-28 w-28 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 animate-pulse"
           />
           <div className="absolute inset-0 rounded-full border-4 md:border-[6px] border-primary border-t-transparent animate-spin" />
         </div>
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary animate-pulse">NHRF</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary animate-pulse">National Human Resource Foundation</h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground mt-1">Empowering Communities</p>
         </div>
       </div>

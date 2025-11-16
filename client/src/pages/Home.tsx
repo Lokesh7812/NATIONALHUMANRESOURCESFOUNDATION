@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* Hero Content with Fade-Up Animation */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
+          <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-white mb-6 animate-fade-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
             Empowering Students.
             <br />
             Transforming Schools.
