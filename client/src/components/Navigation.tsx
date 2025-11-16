@@ -46,7 +46,7 @@ export function Navigation() {
               className="h-16 md:h-20 w-auto"
             />
             <div className="flex flex-col">
-              <div className="text-[10px] sm:text-xs md:text-sm lg:text-base font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
+              <div className="text-xs sm:text-xs md:text-sm lg:text-base font-bold text-primary leading-tight">NATIONAL HUMAN RESOURCES FOUNDATION</div>
               <div className="text-[9px] sm:text-xs text-muted-foreground leading-tight hidden sm:block">Empowering Communities</div>
             </div>
           </Link>
