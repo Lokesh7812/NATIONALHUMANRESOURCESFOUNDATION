@@ -7,14 +7,6 @@ import {
   Target, Eye, Users, GraduationCap, Briefcase, 
   Heart, TrendingUp, Award, CheckCircle, Lightbulb 
 } from 'lucide-react';
-import founderImage from '@assets/generated_images/Founder_portrait_placeholder_85e87b14.png';
-import team1 from '@assets/generated_images/Team_member_portrait_1_5e2e77be.png';
-import team2 from '@assets/generated_images/Team_member_portrait_2_dc748e31.png';
-import team3 from '@assets/generated_images/Team_member_portrait_3_30b02296.png';
-import team4 from '@assets/generated_images/Team_member_portrait_4_9bfe30a3.png';
-import team5 from '@assets/generated_images/Team_member_portrait_5_0e834672.png';
-import team6 from '@assets/generated_images/Team_member_portrait_6_92dd8211.png';
-import team7 from '@assets/generated_images/Team_member_portrait_7_360e117d.png';
 
 export default function About() {
   const timeline = [
@@ -36,13 +28,66 @@ export default function About() {
   ];
 
   const teamMembers = [
-    { name: 'Dr. R. Ravivarman', role: 'Managing Trustee', image: founderImage, bio: 'Leading NHRF with vision and dedication' },
-    { name: 'Board Member 1', role: 'Trustee', image: team1, bio: 'Expert in education development' },
-    { name: 'Board Member 2', role: 'Trustee', image: team2, bio: 'Specialist in sports management' },
-    { name: 'Board Member 3', role: 'Trustee', image: team3, bio: 'Employment and HR expert' },
-    { name: 'Board Member 4', role: 'Trustee', image: team4, bio: 'Community development leader' },
-    { name: 'Board Member 5', role: 'Trustee', image: team5, bio: 'Strategic planning specialist' },
-    { name: 'R. Vijayaraghavan', role: 'Core Contributor', image: team6, bio: 'Operations and program management' },
+    { 
+      name: 'Dr. R. Ravivarman', 
+      role: 'Founder & Director', 
+      image: '/members/ravi.jpg', 
+      bio: 'Former IT software techie who holding the Masters & Doctorate in Business Administration having 12+ years of experience in football career and 6+ years of experience in HR management and non-profit industry who visionised to empower students via sports. Managing a trust & football club since 2018.' 
+    },
+    { 
+      name: 'V. Mohandass', 
+      role: 'Trustee', 
+      image: '/members/Mohandass_V%20.jpg', 
+      bio: 'An Mechanical Engineer who having 12+ years of experience in football career - expertised in designing football training modules and programs - Managing the sports wing of NHRF.' 
+    },
+    { 
+      name: 'A.P Tharun', 
+      role: 'Trustee', 
+      image: '/members/tharun.JPG', 
+      bio: 'Graduated and returned from UK - 4+ years experience in sports industry joined in our force to bring a societal change for rural students. Expertised in event management and partnership. Board of Trustee in NHRF.' 
+    },
+    { 
+      name: 'S. Maheshwaran', 
+      role: 'Trustee', 
+      image: '/members/mageshwaran.jpg', 
+      bio: 'Information Technology & MBA graduate and the former employee of Amazon in HR Domain - who is passionate in football game joined in our NHRF team to develop rural sports. Board of Trustee in NHRF.' 
+    },
+    { 
+      name: 'M. Subramani', 
+      role: 'Trustee', 
+      image: '/members/subramani.jpg', 
+      bio: 'MBA Graduate - Earlier in part of HCL - expertised in accounts and finance management - handling the whole accounts related operation of NHRF. Board of Trustee in NHRF.' 
+    },
+    { 
+      name: 'K. Manikandan', 
+      role: 'Trustee', 
+      image: '/members/Manikandan.jpg', 
+      bio: 'Former employee at Sony having 5+ years of experience in Training & Development Domain who is passionate in Fitness Training - leading and managing the internal operations of NHRF.' 
+    },
+    { 
+      name: 'V Sivasubramanian', 
+      role: 'Team Member', 
+      image: '/members/sivasubramanian.jpg', 
+      bio: 'Mechanical engineer as well as a Marine Engineer, Result Oriented With over 10 years of experience in training for competitive exams, career counselling, soft skills development as well as Placements, I lead teams to deliver impactful educational and career-focused programs.' 
+    },
+    { 
+      name: 'R. Vijayaraghavan', 
+      role: 'Team Lead', 
+      image: '/members/r.vijayaraghavan.jpg', 
+      bio: 'Team Lead at Amazon, having 5+ years of experience and expertization in team handling, event management, hardware administration.' 
+    },
+    { 
+      name: 'Sunny Dev', 
+      role: 'Trustee', 
+      image: '/members/sunnny.jpg', 
+      bio: 'Trustee in NHRF.' 
+    },
+    { 
+      name: 'Vijayaragavan', 
+      role: 'Trustee', 
+      image: '/members/vijayaraghavan.jpg', 
+      bio: 'Trustee in NHRF.' 
+    },
   ];
 
   return (
@@ -221,7 +266,7 @@ export default function About() {
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row gap-8 items-center">
                   <Avatar className="h-32 w-32 md:h-40 md:w-40 flex-shrink-0">
-                    <AvatarImage src={founderImage} alt="Founder" />
+                    <AvatarImage src="/members/ravi.jpg" alt="Founder" />
                     <AvatarFallback>RR</AvatarFallback>
                   </Avatar>
                   <div className="text-center md:text-left">
@@ -246,21 +291,21 @@ export default function About() {
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
-            title="Our Leadership"
+            title="List of Members"
             subtitle="Dedicated professionals driving positive change"
             centered
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="text-center hover-elevate transition-all duration-300 border-card-border">
-                <CardContent className="p-6">
-                  <Avatar className="h-24 w-24 mx-auto mb-4">
+              <Card key={index} className="text-center hover-elevate transition-all duration-300 border-card-border h-full flex flex-col">
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <Avatar className="h-32 w-32 mx-auto mb-4">
                     <AvatarImage src={member.image} alt={member.name} />
                     <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                   </Avatar>
-                  <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
-                  <Badge variant="secondary" className="mb-3">{member.role}</Badge>
-                  <p className="text-sm text-muted-foreground">{member.bio}</p>
+                  <h3 className="font-semibold text-lg mb-2">{member.name}</h3>
+                  <Badge variant="secondary" className="mb-3 w-fit mx-auto">{member.role}</Badge>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-grow">{member.bio}</p>
                 </CardContent>
               </Card>
             ))}
