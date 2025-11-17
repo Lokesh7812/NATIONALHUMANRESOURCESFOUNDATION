@@ -1079,7 +1079,7 @@ These achievers are living examples of resilience, empowerment, and opportunity.
   }
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 w-full overflow-x-hidden">
       {/* Back Button */}
       <div className="bg-background border-b sticky top-16 md:top-20 z-40">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -1093,8 +1093,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       </div>
 
       {/* Project Hero */}
-      <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-background w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Badge className="mb-4">Active Program</Badge>
@@ -1114,8 +1114,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       </section>
 
       {/* Full Description */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 bg-background w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <SectionHeader title="About This Initiatives" />
             <div className="mt-8">
@@ -1126,8 +1126,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       </section>
 
       {/* Impact & Statistics */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 bg-muted/30 w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <SectionHeader title="Impact & Achievements" centered />
           <div className="max-w-4xl mx-auto mt-12">
             <Card className="border-card-border">
@@ -1148,8 +1148,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
 
       {/* Objectives */}
       {project.objectives && (
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 bg-background w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <SectionHeader title="Program Objectives" centered />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
               {project.objectives.map((objective: string, index: number) => (
@@ -1168,8 +1168,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       )}
 
       {/* Beneficiaries */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 bg-muted/30 w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <Card className="border-card-border">
               <CardContent className="p-8 md:p-12">
@@ -1187,8 +1187,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 md:py-24 bg-background w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <Card className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground border-0">
             <CardContent className="p-8 md:p-12 text-center">
               <TrendingUp className="h-12 w-12 mx-auto mb-4 opacity-90" />

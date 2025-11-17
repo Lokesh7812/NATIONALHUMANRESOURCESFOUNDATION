@@ -33,7 +33,12 @@ export function PageTransition({
   const [isTransitioning, setIsTransitioning] = useState(false);
   
   // Check if current route is a sport project (sporta or genesis)
-  const isSportProject = location.startsWith('/projects/sporta') || location.startsWith('/projects/genesis');
+  // Handle both exact matches and with additional paths
+  const isSportProject = 
+    location === '/projects/sporta' || 
+    location.startsWith('/projects/sporta/') ||
+    location === '/projects/genesis' || 
+    location.startsWith('/projects/genesis/');
   
   // Use longer duration for sport projects to allow animation to complete
   const effectiveDuration = isSportProject ? 1000 : duration;

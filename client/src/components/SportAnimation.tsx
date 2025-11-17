@@ -106,7 +106,20 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
   const isExpanding = animationPhase === 'expanding' || animationPhase === 'reveal';
 
   return (
-    <div className="fixed inset-0 z-[9999] pointer-events-none overflow-hidden">
+    <div 
+      className="fixed inset-0 z-[9999] pointer-events-none overflow-hidden"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        padding: 0,
+      }}
+    >
       {/* Background - Clean sports gradient */}
       <div 
         className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-500"
@@ -129,7 +142,7 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         }}
       />
 
-      {/* Football Animation - Centered and Responsive */}
+      {/* Football Animation - Perfectly Centered and Responsive */}
       <div
         className="absolute"
         style={{
@@ -150,6 +163,8 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
             : 'drop-shadow(0 10px 25px rgba(0, 0, 0, 0.5))',
           transformOrigin: 'center center',
           willChange: 'transform, opacity',
+          margin: 0,
+          padding: 0,
         }}
       >
         <svg 
@@ -161,7 +176,10 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
             display: 'block',
             maxWidth: '100%',
             height: 'auto',
+            margin: '0 auto',
+            verticalAlign: 'middle',
           }}
+          preserveAspectRatio="xMidYMid meet"
         >
           {/* Main football circle */}
           <circle
@@ -237,6 +255,8 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
           }}
         >
           {/* Multiple expanding rings for burst effect - Responsive sizes */}
@@ -270,6 +290,8 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
+            width: '100%',
+            height: '100%',
           }}
         >
           <div
@@ -351,6 +373,12 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
           .football-svg {
             filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
           }
+        }
+
+        /* Perfect centering for all screen sizes */
+        .football-svg {
+          display: block;
+          margin: 0 auto;
         }
       `}</style>
     </div>
