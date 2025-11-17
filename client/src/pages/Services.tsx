@@ -121,6 +121,26 @@ export default function Services() {
           />
           <div className="max-w-4xl mx-auto mt-12">
             <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="employment" className="bg-background border rounded-md px-6">
+                <AccordionTrigger className="hover:no-underline">
+                  <span className="text-lg font-semibold">Employment Wing</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  <p className="mb-4">
+                    Our Employment Wing operates as a comprehensive job network connecting youth with opportunities across industries. 
+                    We provide career counseling, skill training, and direct placement support.
+                  </p>
+                  <p className="mb-2 font-medium text-foreground">Network Statistics:</p>
+                  <ul className="mb-4 ml-4 space-y-1">
+                    <li>• 10,00,000+ job seekers in our network</li>
+                    <li>• 6,000+ MSMEs connected</li>
+                    <li>• 20,000+ youth successfully placed</li>
+                    <li>• 22 colleges covered through job fairs</li>
+                  </ul>
+                  <p className="mb-2 font-medium text-foreground">Beneficiaries:</p>
+                  <p>College students, graduates, and young professionals seeking career opportunities and skill development.</p>
+                </AccordionContent>
+              </AccordionItem>
               <AccordionItem value="sporta" className="bg-background border rounded-md px-6">
                 <AccordionTrigger className="hover:no-underline">
                   <span className="text-lg font-semibold">Project SPORTA – Sports Wing</span>
@@ -149,28 +169,7 @@ export default function Services() {
                   <p className="mb-4">Students and teachers in partner schools, with special emphasis on improving the quality of education in under-resourced institutions.</p>
                   <p className="font-medium text-foreground">Impact: 80+ schools reached through various programs</p>
                 </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="employment" className="bg-background border rounded-md px-6">
-                <AccordionTrigger className="hover:no-underline">
-                  <span className="text-lg font-semibold">Employment Wing</span>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  <p className="mb-4">
-                    Our Employment Wing operates as a comprehensive job network connecting youth with opportunities across industries. 
-                    We provide career counseling, skill training, and direct placement support.
-                  </p>
-                  <p className="mb-2 font-medium text-foreground">Network Statistics:</p>
-                  <ul className="mb-4 ml-4 space-y-1">
-                    <li>• 10,00,000+ job seekers in our network</li>
-                    <li>• 6,000+ MSMEs connected</li>
-                    <li>• 20,000+ youth successfully placed</li>
-                    <li>• 22 colleges covered through job fairs</li>
-                  </ul>
-                  <p className="mb-2 font-medium text-foreground">Beneficiaries:</p>
-                  <p>College students, graduates, and young professionals seeking career opportunities and skill development.</p>
-                </AccordionContent>
-              </AccordionItem>
+              </AccordionItem>              
 
               <AccordionItem value="community" className="bg-background border rounded-md px-6">
                 <AccordionTrigger className="hover:no-underline">
