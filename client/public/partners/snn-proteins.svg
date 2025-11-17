@@ -7,6 +7,6 @@
   </defs>
   <rect width="480" height="240" rx="30" fill="#1D1F21"/>
   <rect x="40" y="40" width="400" height="160" rx="24" fill="#111" stroke="url(#grad)" stroke-width="6"/>
-  <text x="50%" y="50%" text-anchor="middle" fill="#F2F2F2" font-family="'Raleway', 'Segoe UI', sans-serif" font-size="60" font-weight="700">S.N.N.</text>
+  <text x="50%" y="50%" text-anchor="middle" fill="#F2F2F2" font-family="'Raleway', 'Segoe UI', sans-serif" font-size="60" font-weight="700">S.S.N</text>
   <text x="50%" y="75%" text-anchor="middle" fill="#F2C94C" font-family="'Raleway', 'Segoe UI', sans-serif" font-size="48" font-weight="600">PROTEINS</text>
 </svg>

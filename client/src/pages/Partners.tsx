@@ -61,7 +61,7 @@ export default function Partners() {
       logo: '/partners/simon-sports.svg',
     },
     {
-      name: 'S.N.N. Proteins',
+      name: 'S.S.N. Proteins',
       description: 'Nutrition and food processing partner supporting athlete wellness and community nutrition drives',
       logo: '/partners/snn-proteins.svg',
     },
