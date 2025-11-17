@@ -16,7 +16,7 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              National Human Resource Foundation (NHRF) is a registered NGO empowering children, youth, and communities through Sports, Education, and Employment development.
+              National Human Resource Foundation (NHRF) is a registered NGO in Pondicherry (Reg. No. 1093/IV/2020). Since 2019, we have been empowering children, youth, and communities through programs in employability, sports, education, women empowerment, skill development, health, environment, and agriculture — with a mission to uplift underprivileged students, promote sports excellence, and build a confident, drug-free younger generation.
             </p>
           </div>
 
