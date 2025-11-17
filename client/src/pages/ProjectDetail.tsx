@@ -396,7 +396,7 @@ The initiative not only prevents youth from drifting into addictions like alcoho
 Beyond football, NHRF supports rural youth in employment by creating networks with HR departments, hospitals, companies, and job-seeking groups.
 
 Inspirational Success Story:
-Two young players, Santhosh and Karthik, were recently selected for the **State Under-16 Team**, showcasing the life-changing impact of this mission.
+Two young players, Santhosh and Karthik, were recently selected for the State Under-16 Team, showcasing the life-changing impact of this mission.
 
 OUR UNIQUES:
 • Elite Coaching Staff: Former professional players and certified coaches with extensive experience.
