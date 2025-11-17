@@ -3,7 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { ScrollFade } from '@/components/ScrollFade';
 import { Card, CardContent } from '@/components/ui/card';
 import { Trophy, GraduationCap, Briefcase } from 'lucide-react';
-import sportaIcon from '@assets/generated_images/Project_SPORTA_icon_b174e451.png';
+import sportaIcon from '@assets/generated_images/Project_SPORTA_icon_b174e451.jpg';
 import chanakyaIcon from '@assets/generated_images/Portal_Chanakya_icon_ddf00b29.png';
 import employmentIcon from '@assets/generated_images/Employment_Wing_icon_a86e685a.png';
 import waterFest from '@assets/generated_images/Water_fest_program_3d28d713.png';

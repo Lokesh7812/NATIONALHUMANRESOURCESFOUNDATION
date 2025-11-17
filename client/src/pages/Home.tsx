@@ -11,7 +11,7 @@ import {
   Trophy, Users, Briefcase, Heart, GraduationCap, 
   Target, Award, CheckCircle, TrendingUp 
 } from 'lucide-react';
-import sportaIcon from '@assets/generated_images/Project_SPORTA_icon_b174e451.png';
+import sportaIcon from '@assets/generated_images/Project_SPORTA_icon_b174e451.jpg';
 import chanakyaIcon from '@assets/generated_images/Portal_Chanakya_icon_ddf00b29.png';
 import employmentIcon from '@assets/generated_images/Employment_Wing_icon_a86e685a.png';
 import communityIcon from '@assets/generated_images/Community_Development_icon_40dc4c54.png';
