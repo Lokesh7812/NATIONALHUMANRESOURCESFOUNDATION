@@ -368,6 +368,60 @@ Project SPORTA transforms raw talent into disciplined achievers, taking students
         'Integrate sports + career + drug-free awareness',
       ],
     },
+    'genesis': {
+      title: 'Genesis Football Club',
+      subtitle: 'We Fall, We Learn, We Rise — Elite Boys & Girls Football Pathway',
+      description: 'Genesis Football Club is a high-performance boys and girls development club under the sports wing of NHRF, combining elite coaching, holistic athlete care, and professional exposure.',
+      fullDescription: `GENESIS FOOTBALL CLUB
+
+We Fall, We Learn, We Rise...
+
+GENESIS FOOTBALL CLUB - BOYS & GIRLS
+
+It is initiated and managed under the sports wing of NHRF. This club is designed for highly talented and committed players and focuses on guiding young players toward team play through cooperative and intensive professional training. They learn to understand the different positions within a team and demonstrate specific attacking and defending skills. Training and development in speed, strength, and endurance are incorporated into every program module.
+
+OUR UNIQUES:
+• Elite Coaching Staff: Former professional players and certified coaches with extensive experience.
+• Support Staff: Dedicated nutritionists, sport psychologists, and academic tutors for holistic care.
+• Administrative Team: Professionals leading marketing, sales, and operational management.
+• State-of-the-Art Facilities: Access to top-notch training turfs through strategic partnerships.
+• Holistic Development: Equal emphasis on athletic and academic growth.
+• Partnership Opportunities: Collaborations with renowned football clubs and sports organizations.
+
+OUR GOALS:
+To Evalve Next Eston
+1. Establish partnerships with 50 private schools within 2030.
+2. Develop a comprehensive training curriculum tailored to different age groups and skill levels.
+3. Achieve a 90% satisfaction rate from participating students and schools.
+
+PROGRAM STRUCTURE:
+• Weekly Schedule: Intensive football training, academic sessions, and recreational activities.
+• Performance Tracking: Regular assessments and feedback sessions to monitor student progress.
+• Parental Involvement: Regular updates and quarterly meetings to keep parents informed about their children's development.
+
+CONTACT & REACH:
+Address: 26, Thee Mithi Street, Thilaspet, Puducherry-605 009, India
+Mobile: 7904840716 | Phone: 0413-2900716
+Website: www.nationalhrfoundation.org
+Email: operations@nationalhrfoundation.org`,
+      image: sportaImg,
+      impact: [
+        'Professional training pathway for boys and girls built inside NHRF’s Sports Wing',
+        'Elite coaches plus nutritionists, psychologists, and academic mentors supporting every player',
+        'Weekly schedule that balances intensive training, academics, and purposeful recreation',
+        'Performance tracking with regular assessments, feedback, and personalized growth plans',
+        'Quarterly parental engagement to align training, academics, and wellbeing goals',
+        'Strategic facility partnerships granting access to state-of-the-art training turfs',
+      ],
+      beneficiaries: 'Highly talented and committed boys and girls seeking structured, high-performance football training with holistic academic and personal development.',
+      objectives: [
+        'Establish partnerships with 50 private schools by 2030 to expand scouting and access',
+        'Develop and refine age- and skill-specific training curriculum modules',
+        'Sustain a 90% satisfaction score among players, parents, and partner schools',
+        'Deliver holistic athlete care spanning coaching, nutrition, psychology, and academics',
+        'Create partnership opportunities with elite football clubs and sports organizations',
+      ],
+    },
     'portal-chanakya': {
       title: 'CHANAKYA PORTAL',
       subtitle: 'Reimagining Government Schools infrastructure improvement and comprehensive development (2023, 2024)',

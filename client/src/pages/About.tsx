@@ -110,10 +110,10 @@ export default function About() {
       bio: 'Trustee in NHRF.' 
     },
     { 
-      name: 'Vijayaragavan', 
+      name: 'Vijayaragavan S', 
       role: 'Trustee', 
       image: '/members/vijayaraghavan.jpg', 
-      bio: 'Trustee in NHRF.' 
+      bio: 'Vijay Raghavan brings over two decades of multi-sector leadership experience, with a strong focus on education, community development, and capacity-building initiatives. Over the last seven years in the NGO sector, he has led large-scale government school interventions across Tamil Nadu, managing multi-district programs, mentoring field teams, and driving impact through innovative, learner-centred solutions. His expertise spans program design, stakeholder engagement, training, and operational excellence, supported by his hands-on approach to integrating technology and AI-enabled tools to strengthen implementation efficiency. As a trustee, Vijay contributes his strategic vision, grassroots experience, and unwavering commitment to building sustainable, inclusive, and transformative development models for communities.' 
     },
   ];
 

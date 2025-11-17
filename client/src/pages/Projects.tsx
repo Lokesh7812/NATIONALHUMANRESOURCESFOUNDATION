@@ -26,11 +26,18 @@ export default function Projects() {
       description: 'A digital movement that inspired the birth of NHRF - A youth-led initiative connecting 2,700+ job seekers across 35 district groups in Tamil Nadu, Puducherry & Karnataka.',
       image: employmentIcon,
     },
+    
      {
       id: 'employment',
       title: 'Employment Exchange Hub',
       description: 'Job network connecting 10,00,000+ job seekers with 6,000+ MSMEs, placing 20,000+ youth in meaningful careers.',
       image: employmentIcon,
+    },
+    {
+      id: 'genesis',
+      title: 'Genesis Football Club',
+      description: 'High-performance boys and girls football club under NHRF’s sports wing delivering elite coaching, holistic development, and pro-level exposure.',
+      image: sportaIcon,
     },
     {
       id: 'sporta',
