@@ -2,6 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { SectionHeader } from '@/components/SectionHeader';
 import { Quote } from 'lucide-react';
+import { FeedbackSection } from '@/components/FeedbackSection';
 
 export default function Testimonials() {
   const testimonials = [
@@ -158,6 +159,9 @@ export default function Testimonials() {
           </div>
         </div>
       </section>
+
+      {/* Feedback Section */}
+      <FeedbackSection />
     </div>
   );
 }

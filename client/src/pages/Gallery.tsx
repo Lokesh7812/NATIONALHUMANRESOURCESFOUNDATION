@@ -1,12 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ScrollFade } from '@/components/ScrollFade';
+import { X } from 'lucide-react';
 
 type Category = 'all' | 'sports' | 'school' | 'camps' | 'jobfairs' | 'community' | 'achievements';
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
+  const [selectedImage, setSelectedImage] = useState<{ url: string; alt: string } | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Gallery images from attached_assets/gallery
   const galleryImageFiles = [
@@ -99,6 +102,49 @@ export default function Gallery() {
     ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory);
 
+  // Handle image click
+  const handleImageClick = (image: { url: string; alt: string }) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Handle modal close
+  const handleCloseModal = useCallback(() => {
+    setIsModalOpen(false);
+    // Restore body scroll
+    document.body.style.overflow = 'unset';
+    // Small delay before clearing selected image for fade-out animation
+    setTimeout(() => {
+      setSelectedImage(null);
+    }, 300);
+  }, []);
+
+  // Handle ESC key press
+  useEffect(() => {
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape' && isModalOpen) {
+        handleCloseModal();
+      }
+    };
+
+    if (isModalOpen) {
+      window.addEventListener('keydown', handleEscKey);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleEscKey);
+    };
+  }, [isModalOpen, handleCloseModal]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   return (
     <div className="min-h-screen pt-20">
       {/* Page Hero */}
@@ -144,8 +190,18 @@ export default function Gallery() {
             {filteredImages.map((image, index) => (
               <div
                 key={image.url}
-                className="group relative aspect-[4/3] overflow-hidden rounded-md bg-muted hover-elevate transition-all duration-300 border border-card-border animate-fade-up"
+                className="group relative aspect-[4/3] overflow-hidden rounded-md bg-muted hover-elevate transition-all duration-300 border border-card-border animate-fade-up cursor-pointer"
                 style={{ animationDelay: `${index * 0.05}s`, animationFillMode: 'both' }}
+                onClick={() => handleImageClick(image)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleImageClick(image);
+                  }
+                }}
+                aria-label={`View ${image.alt} in full size`}
               >
                 <img
                   src={image.url}
@@ -170,6 +226,126 @@ export default function Gallery() {
           </div>
         </section>
       </ScrollFade>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className={`fixed inset-0 z-[9999] flex items-center justify-center p-4 ${
+            isModalOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          } transition-opacity duration-300`}
+          onClick={handleCloseModal}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image viewer"
+        >
+          {/* Dark Overlay */}
+          <div
+            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            style={{
+              animation: isModalOpen ? 'fadeIn 0.3s ease-out' : 'fadeOut 0.3s ease-out',
+            }}
+          />
+
+          {/* Modal Content */}
+          <div
+            className="relative z-10 max-w-7xl w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-4 right-4 md:top-8 md:right-8 z-20 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 md:p-3 transition-all duration-300 hover:scale-110 shadow-lg"
+              aria-label="Close image viewer"
+              style={{
+                animation: isModalOpen ? 'fadeInScale 0.3s ease-out 0.1s both' : 'fadeOutScale 0.2s ease-out',
+              }}
+            >
+              <X className="h-6 w-6 md:h-8 md:w-8" />
+            </button>
+
+            {/* Image Container */}
+            <div
+              className="relative w-full h-full flex items-center justify-center"
+              style={{
+                animation: isModalOpen ? 'fadeInScale 0.3s ease-out' : 'fadeOutScale 0.2s ease-out',
+              }}
+            >
+              <img
+                src={selectedImage.url}
+                alt={selectedImage.alt}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                style={{
+                  animation: isModalOpen ? 'zoomIn 0.3s ease-out' : 'zoomOut 0.2s ease-out',
+                }}
+              />
+            </div>
+          </div>
+
+          <style>{`
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            @keyframes fadeOut {
+              from {
+                opacity: 1;
+              }
+              to {
+                opacity: 0;
+              }
+            }
+
+            @keyframes fadeInScale {
+              from {
+                opacity: 0;
+                transform: scale(0.95);
+              }
+              to {
+                opacity: 1;
+                transform: scale(1);
+              }
+            }
+
+            @keyframes fadeOutScale {
+              from {
+                opacity: 1;
+                transform: scale(1);
+              }
+              to {
+                opacity: 0;
+                transform: scale(0.95);
+              }
+            }
+
+            @keyframes zoomIn {
+              from {
+                opacity: 0;
+                transform: scale(0.9);
+              }
+              to {
+                opacity: 1;
+                transform: scale(1);
+              }
+            }
+
+            @keyframes zoomOut {
+              from {
+                opacity: 1;
+                transform: scale(1);
+              }
+              to {
+                opacity: 0;
+                transform: scale(0.9);
+              }
+            }
+          `}</style>
+        </div>
+      )}
     </div>
   );
 }
