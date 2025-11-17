@@ -7,7 +7,7 @@ export default function Services() {
   const services = [
     {
       icon: Briefcase,
-      title: 'Employment Services',
+      title: 'Employability Services',
       subtitle: 'Connecting youth with career opportunities',
       description: 'Our employment wing bridges the gap between job seekers and employers, providing career guidance and placement services.',
       highlights: [

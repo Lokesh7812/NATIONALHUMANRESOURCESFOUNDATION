@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F80ED"/>
+      <stop offset="100%" stop-color="#56CCF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="240" rx="32" fill="url(#grad)"/>
+  <text x="50%" y="46%" text-anchor="middle" fill="#ffffff" font-family="'Montserrat', 'Segoe UI', sans-serif" font-size="72" font-weight="700">MERCURY</text>
+  <text x="50%" y="72%" text-anchor="middle" fill="#E3F2FD" font-family="'Montserrat', 'Segoe UI', sans-serif" font-size="48" letter-spacing="6">CHANNEL</text>
+</svg>

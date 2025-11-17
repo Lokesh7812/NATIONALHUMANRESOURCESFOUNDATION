@@ -40,6 +40,12 @@ export default function About() {
       title: 'Community Development', 
       description: 'Integrated community-based programs focusing on health, environment, and empowerment.' 
     },
+    { 
+  year: '2025', 
+  title: 'Agriculture Wing Expanded', 
+  description: 'Significantly expanded the agriculture wing with new training programs, farmer-support initiatives, and sustainable farming projects.' 
+}
+
   ];
 
 
@@ -49,7 +55,7 @@ export default function About() {
   { icon: Target, title: 'Job Creation', description: 'Support 5 lakh job seekers by 2030' },
   { icon: Target, title: 'Sports Excellence', description: 'Train 1 lakh talents in sports by 2030' },
   
-  { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence' },
+  { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence in sports' },
   { icon: Heart, title: 'Women Empowerment', description: 'Enable 1,000 women entrepreneurs by 2030' },
 ];
 
@@ -158,7 +164,7 @@ export default function About() {
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Convert 1,000 schools into Centres of Excellence</span>
+                  <span className="text-foreground">Convert 1,000 schools into Centres of Excellence in Sports</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
@@ -175,7 +181,7 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
               </div>
               <p className="text-lg text-foreground leading-relaxed">
-                To build our country where every child and youth has access to quality sports training, education, 
+                To build our country where every child and youth has access to quality Employability, sports training, education, 
                 skill development, and life-changing opportunities regardless of economic background. We envision 
                 a nation of confident, healthy, and skilled young people who contribute meaningfully to society.
               </p>

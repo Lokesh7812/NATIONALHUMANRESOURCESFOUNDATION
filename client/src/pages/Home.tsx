@@ -151,7 +151,7 @@ export default function Home() {
               <div className="animate-fade-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               <ProjectCard
                 id="employment"
-                title="Employment "
+                title="Employability "
                 description="Job network & youth placement opportunities"
                 image={employmentIcon}
               />
@@ -200,13 +200,13 @@ export default function Home() {
             <CounterBox value="25+" label="Schools Under Training" icon={GraduationCap} />
             <CounterBox value="2,00,000+" label="Job Seekers in Network" icon={Users} />
             <CounterBox value="6,000+" label="MSMEs Connected" icon={Briefcase} />
-            <CounterBox value="20,000+" label="Youth Placed in Jobs" icon={Trophy} />
+            <CounterBox value="20,000+" label="Youths Placed in Jobs" icon={Trophy} />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <CounterBox value="80+" label="Schools implemented Water Fest" icon={Heart} />
             <CounterBox value="110+" label="Summer Camp Beneficiaries" icon={Users} />
             <CounterBox value="1,024" label="MERO Trophy Participants" icon={Award} />
-            <CounterBox value="500+" label="Drug Awareness" icon={CheckCircle} />
+            <CounterBox value="500+" label="Drug Awareness camp" icon={CheckCircle} />
             <CounterBox value="220+" label="IKF Trails Talents" icon={Target} />
           </div>
           </div>

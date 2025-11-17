@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240">
+  <rect width="480" height="240" rx="28" fill="#0B132B"/>
+  <circle cx="120" cy="120" r="70" fill="#1C2541" stroke="#3A506B" stroke-width="10"/>
+  <circle cx="360" cy="120" r="70" fill="#1C2541" stroke="#5BC0BE" stroke-width="10"/>
+  <text x="50%" y="55%" text-anchor="middle" fill="#FFFFFF" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="64" font-weight="700">SIMON</text>
+  <text x="50%" y="78%" text-anchor="middle" fill="#5BC0BE" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="48" font-weight="600">SPORTS</text>
+</svg>

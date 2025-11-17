@@ -1,5 +1,6 @@
 import { useEffect, useState, ReactNode } from 'react';
 import { useLocation } from 'wouter';
+import { SportAnimation } from './SportAnimation';
 
 type TransitionType = 
   | 'fade'
@@ -30,6 +31,12 @@ export function PageTransition({
   const [displayChildren, setDisplayChildren] = useState(children);
   const [key, setKey] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  
+  // Check if current route is a sport project (sporta or genesis)
+  const isSportProject = location.startsWith('/projects/sporta') || location.startsWith('/projects/genesis');
+  
+  // Use longer duration for sport projects to allow animation to complete
+  const effectiveDuration = isSportProject ? 1000 : duration;
 
   useEffect(() => {
     // Start transition
@@ -45,12 +52,12 @@ export function PageTransition({
         // End transition after animation
         setTimeout(() => {
           setIsTransitioning(false);
-        }, duration);
+        }, effectiveDuration);
       });
     }, 50);
 
     return () => clearTimeout(timer);
-  }, [location, children, duration]);
+  }, [location, children, effectiveDuration]);
 
   const getTransitionClasses = () => {
     const baseClasses = 'transition-all ease-out';
@@ -102,8 +109,13 @@ export function PageTransition({
 
   return (
     <div className="relative">
-      {/* Color Wipe Overlay */}
-      {transition === 'color-wipe' && isTransitioning && (
+      {/* Sport Animation for Sport Projects */}
+      {isSportProject && transition === 'color-wipe' && (
+        <SportAnimation isActive={isTransitioning} duration={effectiveDuration} />
+      )}
+      
+      {/* Color Wipe Overlay for Regular Pages */}
+      {!isSportProject && transition === 'color-wipe' && isTransitioning && (
         <div
           className="fixed inset-0 z-[9999] pointer-events-none"
           style={{

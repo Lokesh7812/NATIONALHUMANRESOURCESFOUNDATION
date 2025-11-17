@@ -369,16 +369,34 @@ Project SPORTA transforms raw talent into disciplined achievers, taking students
       ],
     },
     'genesis': {
-      title: 'Genesis Football Club',
-      subtitle: 'We Fall, We Learn, We Rise — Elite Boys & Girls Football Pathway',
-      description: 'Genesis Football Club is a high-performance boys and girls development club under the sports wing of NHRF, combining elite coaching, holistic athlete care, and professional exposure.',
-      fullDescription: `GENESIS FOOTBALL CLUB
+  title: 'Genesis Football Club',
+  subtitle: 'We Fall, We Learn, We Rise — Elite Boys & Girls Football Pathway',
+  description: 'Genesis Football Club is a high-performance boys and girls development club under the sports wing of NHRF, combining elite coaching, holistic athlete care, and professional exposure. This initiative is also dedicated to providing free football training to government school students and rural children.',
+  fullDescription: `GENESIS FOOTBALL CLUB
 
 We Fall, We Learn, We Rise...
 
 GENESIS FOOTBALL CLUB - BOYS & GIRLS
+Genesis FC is not only an elite football development pathway — it is also a social mission-driven initiative providing free football training for government school students and rural children across Puducherry and Tamil Nadu.
 
 It is initiated and managed under the sports wing of NHRF. This club is designed for highly talented and committed players and focuses on guiding young players toward team play through cooperative and intensive professional training. They learn to understand the different positions within a team and demonstrate specific attacking and defending skills. Training and development in speed, strength, and endurance are incorporated into every program module.
+
+COMMUNITY & RURAL IMPACT:
+
+This initiative began at Indira Gandhi Government High School, Katterikuppam, where a dedicated techie, R. Ravi Varman, and his team transformed unused grounds into active football turfs, giving rural students a platform to rise. With support from his school-time teammate and Sports Director V. Mohandass, the trust prepared the field, selected 20 government school students, and started daily coaching sessions.
+
+Former players from the village were roped in as volunteers. Even the Chief Minister, N. Rangasamy, contributed by helping the trust purchase equipment for the children.
+
+Over 10 tournaments in one year — from Chennai to Cuddalore — helped the students gain exposure. The trust also organised the Mero Trophy Tournament with the participation of 35 teams from TN and Kerala.
+
+Ravi Varman aims to form football teams in more government schools, with the next target being PONCOS Higher Secondary School, Lingerreddipalayam.
+
+The initiative not only prevents youth from drifting into addictions like alcohol or drugs but also enables them to pursue State, Regional, and National level opportunities.
+
+Beyond football, NHRF supports rural youth in employment by creating networks with HR departments, hospitals, companies, and job-seeking groups.
+
+Inspirational Success Story:
+Two young players, Santhosh and Karthik, were recently selected for the **State Under-16 Team**, showcasing the life-changing impact of this mission.
 
 OUR UNIQUES:
 • Elite Coaching Staff: Former professional players and certified coaches with extensive experience.
@@ -389,10 +407,10 @@ OUR UNIQUES:
 • Partnership Opportunities: Collaborations with renowned football clubs and sports organizations.
 
 OUR GOALS:
-To Evalve Next Eston
 1. Establish partnerships with 50 private schools within 2030.
-2. Develop a comprehensive training curriculum tailored to different age groups and skill levels.
-3. Achieve a 90% satisfaction rate from participating students and schools.
+2. Expand free football programs across government and rural schools.
+3. Develop a comprehensive training curriculum tailored to different age groups and skill levels.
+4. Achieve a 90% satisfaction rate from participating students, parents, and schools.
 
 PROGRAM STRUCTURE:
 • Weekly Schedule: Intensive football training, academic sessions, and recreational activities.
@@ -400,28 +418,37 @@ PROGRAM STRUCTURE:
 • Parental Involvement: Regular updates and quarterly meetings to keep parents informed about their children's development.
 
 CONTACT & REACH:
-Address: 26, Thee Mithi Street, Thilaspet, Puducherry-605 009, India
-Mobile: 7904840716 | Phone: 0413-2900716
-Website: www.nationalhrfoundation.org
+Address: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry
+
+
+Mobile:7904840716 & 99433 91650 | Phone: 0413-2900716
+| Website: www.nationalhrfoundation.org
 Email: operations@nationalhrfoundation.org`,
-      image: sportaImg,
-      impact: [
-        'Professional training pathway for boys and girls built inside NHRF’s Sports Wing',
-        'Elite coaches plus nutritionists, psychologists, and academic mentors supporting every player',
-        'Weekly schedule that balances intensive training, academics, and purposeful recreation',
-        'Performance tracking with regular assessments, feedback, and personalized growth plans',
-        'Quarterly parental engagement to align training, academics, and wellbeing goals',
-        'Strategic facility partnerships granting access to state-of-the-art training turfs',
-      ],
-      beneficiaries: 'Highly talented and committed boys and girls seeking structured, high-performance football training with holistic academic and personal development.',
-      objectives: [
-        'Establish partnerships with 50 private schools by 2030 to expand scouting and access',
-        'Develop and refine age- and skill-specific training curriculum modules',
-        'Sustain a 90% satisfaction score among players, parents, and partner schools',
-        'Deliver holistic athlete care spanning coaching, nutrition, psychology, and academics',
-        'Create partnership opportunities with elite football clubs and sports organizations',
-      ],
-    },
+
+  image: sportaImg,
+
+  impact: [
+    'Professional training pathway for boys and girls built inside NHRF’s Sports Wing',
+    'Elite coaches plus nutritionists, psychologists, and academic mentors supporting every player',
+    'Weekly schedule that balances intensive training, academics, and purposeful recreation',
+    'Performance tracking with regular assessments, feedback, and personalized growth plans',
+    'Quarterly parental engagement to align training, academics, and wellbeing goals',
+    'Strategic facility partnerships granting access to state-of-the-art training turfs',
+    'Free football training and development programs dedicated to government school and rural children',
+    'Community-driven model involving volunteers, former players, and local support',
+  ],
+
+  beneficiaries: 'Highly talented and committed boys and girls — including government school and rural students — seeking structured, high-performance football training with holistic academic and personal development.',
+
+  objectives: [
+    'Establish partnerships with 50 private and government schools by 2030 to expand scouting and access',
+    'Develop and refine age- and skill-specific training curriculum modules',
+    'Sustain a 90% satisfaction score among players, parents, and partner schools',
+    'Deliver holistic athlete care spanning coaching, nutrition, psychology, and academics',
+    'Expand free rural and government school sports development programs',
+    'Create partnership opportunities with elite football clubs and sports organizations',
+  ],
+},
     'portal-chanakya': {
       title: 'CHANAKYA PORTAL',
       subtitle: 'Reimagining Government Schools infrastructure improvement and comprehensive development (2023, 2024)',

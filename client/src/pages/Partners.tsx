@@ -8,6 +8,7 @@ export default function Partners() {
       description: 'Service organization supporting community welfare and youth empowerment',
       logo: '/partners/Rotary.png',
     },
+    
     {
       name: 'Government of Puducherry',
       description: 'Official partner for education and sports initiatives across the territory',
@@ -42,6 +43,27 @@ export default function Partners() {
       name: 'PondyCAN',
       description: 'Pondicherry Cancer Network partnering in health awareness campaigns',
       logo: '/partners/pondycan.jpg',
+    },
+    {
+      name: 'Sri Lakshmi Narayana Institute of Medical Sciences (SLIMS)',
+      description:
+        'Teaching hospital and medical college partnering on community health outreach and clinical support initiatives',
+      logo: '/partners/SLIMS.jpg',
+    },
+    {
+      name: 'Mercury Channel',
+      description: 'Broadcast and digital media partner amplifying awareness for our sports and health programs',
+      logo: '/partners/mercury-channel.svg',
+    },
+    {
+      name: 'Simon Sports',
+      description: 'Sporting goods partner providing equipment and apparel for grassroots training camps',
+      logo: '/partners/simon-sports.svg',
+    },
+    {
+      name: 'S.N.N. Proteins',
+      description: 'Nutrition and food processing partner supporting athlete wellness and community nutrition drives',
+      logo: '/partners/snn-proteins.svg',
     },
    
   ];
