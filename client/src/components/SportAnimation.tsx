@@ -7,6 +7,17 @@ interface SportAnimationProps {
 
 export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProps) {
   const [animationPhase, setAnimationPhase] = useState<'idle' | 'entering' | 'centering' | 'expanding' | 'reveal' | 'end'>('idle');
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     if (isActive) {
@@ -33,22 +44,26 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
 
   if (!isActive || animationPhase === 'end') return null;
 
-  // Calculate ball position and properties based on phase
+  // Calculate ball position and properties based on phase - responsive scaling
   const getBallProps = () => {
+    // Base size multiplier for mobile vs desktop
+    const baseSize = isMobile ? 0.7 : 1;
+    const maxScale = isMobile ? 10 : 12;
+    
     switch (animationPhase) {
       case 'idle':
         return { 
-          x: '-15%', 
+          x: '50%', 
           y: '50%', 
-          scale: 0.8, 
+          scale: 0.6 * baseSize, 
           opacity: 0,
           rotation: 0 
         };
       case 'entering':
         return { 
-          x: '20%', 
+          x: '50%', 
           y: '50%', 
-          scale: 1, 
+          scale: 0.8 * baseSize, 
           opacity: 1,
           rotation: 180 
         };
@@ -56,7 +71,7 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         return { 
           x: '50%', 
           y: '50%', 
-          scale: 1.5, 
+          scale: 1.2 * baseSize, 
           opacity: 1,
           rotation: 360 
         };
@@ -64,7 +79,7 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         return { 
           x: '50%', 
           y: '50%', 
-          scale: 8, 
+          scale: 6 * baseSize, 
           opacity: 0.95,
           rotation: 540 
         };
@@ -72,7 +87,7 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         return { 
           x: '50%', 
           y: '50%', 
-          scale: 12, 
+          scale: maxScale, 
           opacity: 0,
           rotation: 720 
         };
@@ -80,7 +95,7 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         return { 
           x: '50%', 
           y: '50%', 
-          scale: 1, 
+          scale: 1 * baseSize, 
           opacity: 1,
           rotation: 0 
         };
@@ -114,12 +129,12 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         }}
       />
 
-      {/* Football Animation */}
+      {/* Football Animation - Centered and Responsive */}
       <div
         className="absolute"
         style={{
-          left: ballProps.x,
-          top: ballProps.y,
+          left: '50%',
+          top: '50%',
           transform: `translate(-50%, -50%) scale(${ballProps.scale}) rotate(${ballProps.rotation}deg)`,
           opacity: ballProps.opacity,
           transition: animationPhase === 'entering' 
@@ -133,13 +148,20 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
           filter: isExpanding 
             ? 'blur(2px) drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4))'
             : 'drop-shadow(0 10px 25px rgba(0, 0, 0, 0.5))',
+          transformOrigin: 'center center',
+          willChange: 'transform, opacity',
         }}
       >
         <svg 
-          width="120" 
-          height="120" 
+          width={isMobile ? "100" : "120"} 
+          height={isMobile ? "100" : "120"} 
           viewBox="0 0 120 120"
           className="football-svg"
+          style={{
+            display: 'block',
+            maxWidth: '100%',
+            height: 'auto',
+          }}
         >
           {/* Main football circle */}
           <circle
@@ -206,20 +228,23 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         </svg>
       </div>
 
-      {/* Expanding burst effect when ball reaches center */}
+      {/* Expanding burst effect when ball reaches center - Responsive */}
       {animationPhase === 'expanding' && (
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
           style={{
             zIndex: 15,
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
           }}
         >
-          {/* Multiple expanding rings for burst effect */}
+          {/* Multiple expanding rings for burst effect - Responsive sizes */}
           <div
             className="rounded-full border-4 border-white"
             style={{
-              width: '200px',
-              height: '200px',
+              width: isMobile ? '150px' : '200px',
+              height: isMobile ? '150px' : '200px',
               animation: 'burst-ring-1 0.2s ease-out forwards',
               opacity: 0.8,
             }}
@@ -227,8 +252,8 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
           <div
             className="rounded-full border-3 border-blue-300 absolute"
             style={{
-              width: '250px',
-              height: '250px',
+              width: isMobile ? '180px' : '250px',
+              height: isMobile ? '180px' : '250px',
               animation: 'burst-ring-2 0.25s ease-out forwards',
               opacity: 0.6,
             }}
@@ -236,19 +261,22 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
         </div>
       )}
 
-      {/* Final expansion effect */}
+      {/* Final expansion effect - Responsive */}
       {animationPhase === 'reveal' && (
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
           style={{
             zIndex: 20,
+            left: '50%',
+            top: '50%',
+            transform: 'translate(-50%, -50%)',
           }}
         >
           <div
             className="rounded-full bg-white"
             style={{
-              width: '100px',
-              height: '100px',
+              width: isMobile ? '80px' : '100px',
+              height: isMobile ? '80px' : '100px',
               animation: 'final-burst 0.25s ease-out forwards',
               opacity: 0.9,
             }}
@@ -259,33 +287,33 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
       <style>{`
         @keyframes burst-ring-1 {
           0% {
-            transform: scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
             opacity: 0.8;
           }
           100% {
-            transform: scale(2.5);
+            transform: translate(-50%, -50%) scale(2.5);
             opacity: 0;
           }
         }
 
         @keyframes burst-ring-2 {
           0% {
-            transform: scale(0.3);
+            transform: translate(-50%, -50%) scale(0.3);
             opacity: 0.6;
           }
           100% {
-            transform: scale(3);
+            transform: translate(-50%, -50%) scale(3);
             opacity: 0;
           }
         }
 
         @keyframes final-burst {
           0% {
-            transform: scale(0);
+            transform: translate(-50%, -50%) scale(0);
             opacity: 0.9;
           }
           100% {
-            transform: scale(15);
+            transform: translate(-50%, -50%) scale(15);
             opacity: 0;
           }
         }
@@ -309,6 +337,19 @@ export function SportAnimation({ isActive, duration = 1000 }: SportAnimationProp
           }
           to {
             transform: rotate(360deg);
+          }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+          .football-svg {
+            filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.3));
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          .football-svg {
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
           }
         }
       `}</style>
