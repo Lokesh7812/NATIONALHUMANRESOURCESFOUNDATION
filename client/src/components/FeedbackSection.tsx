@@ -24,18 +24,6 @@ export function FeedbackSection() {
     setSelectedRole(roleId);
   };
 
-  const handleWhatsAppClick = () => {
-    if (!selectedRole) return;
-    
-    const role = roles.find(r => r.id === selectedRole);
-    const roleLabel = role ? role.label : selectedRole;
-    const message = `Hi, I am a ${roleLabel}. I would like to share my feedback.`;
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/917904840716?text=${encodedMessage}`;
-    
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-  };
-
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,69 +39,77 @@ export function FeedbackSection() {
             const Icon = role.icon;
             const isSelected = selectedRole === role.id;
             
+            const handleWhatsAppClickForRole = () => {
+              const message = `Hi, I am a ${role.label}. I would like to share my feedback.`;
+              const encodedMessage = encodeURIComponent(message);
+              const whatsappUrl = `https://wa.me/917904840716?text=${encodedMessage}`;
+              window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+            };
+            
             return (
-              <Card
-                key={role.id}
-                className={`
-                  cursor-pointer transition-all duration-300 border-2
-                  ${isSelected 
-                    ? 'border-primary bg-primary/10 shadow-lg scale-105' 
-                    : 'border-card-border hover:border-primary/50 hover:shadow-md hover:scale-102'
-                  }
-                  hover-elevate
-                `}
-                onClick={() => handleRoleSelect(role.id)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    handleRoleSelect(role.id);
-                  }
-                }}
-                tabIndex={0}
-                role="button"
-                aria-pressed={isSelected}
-                aria-label={`Select ${role.label} role`}
-              >
-                <CardContent className="p-5 md:p-6 text-center">
-                  <div className={`
-                    rounded-full p-3 md:p-4 w-fit mx-auto mb-3 md:mb-4 transition-all duration-300
+              <div key={role.id} className="flex flex-col">
+                <Card
+                  className={`
+                    cursor-pointer transition-all duration-300 border-2
                     ${isSelected 
-                      ? 'bg-primary text-primary-foreground shadow-lg' 
-                      : 'bg-primary/10 text-primary hover:bg-primary/20'
+                      ? 'border-primary bg-primary/10 shadow-lg scale-105' 
+                      : 'border-card-border hover:border-primary/50 hover:shadow-md hover:scale-102'
                     }
-                  `}>
-                    <Icon className="h-5 w-5 md:h-6 md:w-6" />
+                    hover-elevate
+                  `}
+                  onClick={() => handleRoleSelect(role.id)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      handleRoleSelect(role.id);
+                    }
+                  }}
+                  tabIndex={0}
+                  role="button"
+                  aria-pressed={isSelected}
+                  aria-label={`Select ${role.label} role`}
+                >
+                  <CardContent className="p-5 md:p-6 text-center">
+                    <div className={`
+                      rounded-full p-3 md:p-4 w-fit mx-auto mb-3 md:mb-4 transition-all duration-300
+                      ${isSelected 
+                        ? 'bg-primary text-primary-foreground shadow-lg' 
+                        : 'bg-primary/10 text-primary hover:bg-primary/20'
+                      }
+                    `}>
+                      <Icon className="h-5 w-5 md:h-6 md:w-6" />
+                    </div>
+                    <h3 className={`
+                      font-semibold text-xs sm:text-sm md:text-base transition-colors duration-300 leading-tight
+                      ${isSelected ? 'text-primary font-bold' : 'text-foreground'}
+                    `}>
+                      {role.label}
+                    </h3>
+                  </CardContent>
+                </Card>
+                
+                {/* WhatsApp Button - Appears below selected role */}
+                {isSelected && (
+                  <div 
+                    className="mt-4 flex justify-center animate-fade-in"
+                    style={{
+                      animation: 'fadeInUp 0.4s ease-out forwards',
+                    }}
+                  >
+                    <Button
+                      onClick={handleWhatsAppClickForRole}
+                      size="lg"
+                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-semibold px-6 py-4 text-base gap-2 w-full sm:w-auto"
+                    >
+                      <MessageSquare className="h-5 w-5" />
+                      <span>Share Feedback on WhatsApp</span>
+                    </Button>
                   </div>
-                  <h3 className={`
-                    font-semibold text-xs sm:text-sm md:text-base transition-colors duration-300 leading-tight
-                    ${isSelected ? 'text-primary font-bold' : 'text-foreground'}
-                  `}>
-                    {role.label}
-                  </h3>
-                </CardContent>
-              </Card>
+                )}
+              </div>
             );
           })}
         </div>
-
-        {/* WhatsApp Button - Fade in when role is selected */}
-        {selectedRole && (
-          <div 
-            className="mt-8 flex justify-center animate-fade-in"
-            style={{
-              animation: 'fadeInUp 0.4s ease-out forwards',
-            }}
-          >
-            <Button
-              onClick={handleWhatsAppClick}
-              size="lg"
-              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 font-semibold px-8 py-6 text-lg gap-3"
-            >
-              <MessageSquare className="h-6 w-6" />
-              <span>Share Feedback on WhatsApp</span>
-            </Button>
-          </div>
-        )}
 
         <style>{`
           @keyframes fadeInUp {

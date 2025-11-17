@@ -1079,9 +1079,9 @@ These achievers are living examples of resilience, empowerment, and opportunity.
   }
 
   return (
-    <div className="min-h-screen pt-20 w-full overflow-x-hidden">
+    <div className="min-h-screen w-full overflow-x-hidden">
       {/* Back Button */}
-      <div className="bg-background border-b sticky top-16 md:top-20 z-40">
+      <div className="bg-background border-b sticky top-20 md:top-24 z-40">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link href="/projects">
             <Button variant="ghost" className="gap-2" data-testid="button-back-to-projects">
@@ -1091,7 +1091,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
           </Link>
         </div>
       </div>
-
+<br></br>
+<br></br>
       {/* Project Hero */}
       <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-background w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
