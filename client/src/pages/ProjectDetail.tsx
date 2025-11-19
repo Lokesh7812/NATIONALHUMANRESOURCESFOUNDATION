@@ -2,7 +2,7 @@ import { useParams, Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowLeft, CheckCircle, Users, Target, TrendingUp } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Users, Target, TrendingUp, Facebook, Instagram } from 'lucide-react';
 import { SectionHeader } from '@/components/SectionHeader';
 import { ReactNode } from 'react';
 import sportaImg from '@assets/generated_images/Sports_training_program_photo_f804f1c6.png';
@@ -418,12 +418,7 @@ PROGRAM STRUCTURE:
 • Parental Involvement: Regular updates and quarterly meetings to keep parents informed about their children's development.
 
 CONTACT & REACH:
-Address: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry
-
-
-Mobile:7904840716 & 99433 91650 | Phone: 0413-2900716
-| Website: www.nationalhrfoundation.org
-Email: operations@nationalhrfoundation.org`,
+Home Ground: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry Mobile:7904840716 & 99433 91650 | Phone: 0413-2900716`,
 
   image: sportaImg,
 
@@ -452,12 +447,13 @@ Email: operations@nationalhrfoundation.org`,
     'portal-chanakya': {
       title: 'CHANAKYA PORTAL',
       subtitle: 'Reimagining Government Schools infrastructure improvement and comprehensive development (2023, 2024)',
-      description: 'The Chanakya Portal is a holistic initiative to uplift government schools by improving infrastructure, classroom design, digital learning, teacher training, and student talent development.',
+      description: 'The Chanakya Portal is a holistic initiative to uplift government schools by improving infrastructure, classroom design, digital learning, teacher training, and student talent development.We also work on enhancing learning resources, including libraries, laboratories, and technology integration. ',
       fullDescription: `Beneficiary Schools
 
 • PONCOS Higher Secondary School – LRP, Puducherry
 • Government High School – Vanur, Tamil Nadu
 • Government High School – Katterikuppam, Puducherry
+
 
 Chanakya restores dignity, opportunity, and innovation to public education.`,
       image: chanakyaImg,
@@ -810,26 +806,26 @@ These efforts help rural students progress from education → employability → 
         'Build a generation of empowered, skilled, and future-ready individuals',
       ],
     },
-    'school-development': {
-      title: 'School Development Programs',
-      subtitle: 'Infrastructure & Resource Enhancement',
-      description: 'Under Portal Chanakya, we work on comprehensive school development including infrastructure improvement and resource enhancement.',
-      fullDescription: 'These programs focus on physical infrastructure development, from classroom improvements to sports facilities. We also work on enhancing learning resources, including libraries, laboratories, and technology integration. Each project is customized to the specific needs of the school.',
-      image: schoolDev,
-      impact: [
-        'Multiple schools with improved infrastructure',
-        'Enhanced learning environments created',
-        'Resource libraries established',
-        'Technology integration in classrooms',
-      ],
-      beneficiaries: 'Schools in need of infrastructure and resource development, ultimately benefiting thousands of students.',
-      objectives: [
-        'Improve school infrastructure',
-        'Enhance learning resources',
-        'Modernize educational facilities',
-        'Create conducive learning environments',
-      ],
-    },
+    // 'school-development': {
+    //   title: 'School Development Programs',
+    //   subtitle: 'Infrastructure & Resource Enhancement',
+    //   description: 'Under Portal Chanakya, we work on comprehensive school development including infrastructure improvement and resource enhancement.',
+    //   fullDescription: 'These programs focus on physical infrastructure development, from classroom improvements to sports facilities. We also work on enhancing learning resources, including libraries, laboratories, and technology integration. Each project is customized to the specific needs of the school.',
+    //   image: schoolDev,
+    //   impact: [
+    //     'Multiple schools with improved infrastructure',
+    //     'Enhanced learning environments created',
+    //     'Resource libraries established',
+    //     'Technology integration in classrooms',
+    //   ],
+    //   beneficiaries: 'Schools in need of infrastructure and resource development, ultimately benefiting thousands of students.',
+    //   objectives: [
+    //     'Improve school infrastructure',
+    //     'Enhance learning resources',
+    //     'Modernize educational facilities',
+    //     'Create conducive learning environments',
+    //   ],
+    // },
     'college-job-fairs': {
       title: 'College Job Fairs',
       subtitle: 'Campus Recruitment Events',
@@ -1118,10 +1114,37 @@ These achievers are living examples of resilience, empowerment, and opportunity.
       <section className="py-16 md:py-24 bg-background w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-4xl mx-auto">
-            <SectionHeader title="About This Initiatives" />
+            <SectionHeader title="About This Initiative" />
             <div className="mt-8">
               <FormattedDescription text={project.fullDescription} />
             </div>
+            {projectId === 'genesis' && (
+              <div className="mt-12">
+                <p className="text-center text-lg text-muted-foreground mb-6">
+                  Follow Genesis Football Club for match updates, training highlights, and community stories.
+                </p>
+                <div className="flex items-center justify-center gap-6">
+                  <a
+                    href="https://www.instagram.com/genesis_fc_official?igsh=cGdpeGx3aWJyZ3Rq"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Genesis Football Club on Instagram"
+                    className="p-4 rounded-full border border-card-border hover:border-primary hover:text-primary transition-colors"
+                  >
+                    <Instagram className="h-6 w-6" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1D7grZ5tTU/"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Genesis Football Club on Facebook"
+                    className="p-4 rounded-full border border-card-border hover:border-primary hover:text-primary transition-colors"
+                  >
+                    <Facebook className="h-6 w-6" />
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -1206,6 +1229,7 @@ These achievers are living examples of resilience, empowerment, and opportunity.
           </Card>
         </div>
       </section>
+
     </div>
   );
 }

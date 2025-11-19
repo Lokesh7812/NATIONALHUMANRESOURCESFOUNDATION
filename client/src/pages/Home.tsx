@@ -206,7 +206,7 @@ export default function Home() {
             <CounterBox value="80+" label="Schools implemented Water Fest" icon={Heart} />
             <CounterBox value="110+" label="Summer Camp Beneficiaries" icon={Users} />
             <CounterBox value="1,024" label="MERO Trophy Participants" icon={Award} />
-            <CounterBox value="500+" label="Drug Awareness camp" icon={CheckCircle} />
+            <CounterBox value="500+" label="Students attended Drug Awareness camp" icon={CheckCircle} />
             <CounterBox value="220+" label="IKF Trails Talents" icon={Target} />
           </div>
           </div>

@@ -123,12 +123,7 @@ export default function Projects() {
       description: 'Distributing essential stationery to 152 board exam candidates over 3 years, easing educational expenses and inspiring academic excellence.',
       image: schoolDev,
     },
-    {
-      id: 'school-development',
-      title: 'School Development',
-      description: 'Infrastructure improvement and resource enhancement for educational institutions.',
-      image: schoolDev,
-    },
+    
     {
       id: 'college-job-fairs',
       title: 'College Job Fairs',
