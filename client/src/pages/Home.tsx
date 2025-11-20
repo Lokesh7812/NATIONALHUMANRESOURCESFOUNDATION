@@ -79,7 +79,7 @@ export default function Home() {
           }}
         >
           <img
-            src="/gallery/home.jpg"
+            src="/gallery/hero.png"
             alt="NHRF Activities"
             className="w-full h-full object-cover"
           />
