@@ -25,7 +25,7 @@ export default function Projects() {
       id: 'tamil-matrix',
       title: 'Tamil Matrix',
       description: 'A digital movement that inspired the birth of NHRF - A youth-led initiative connecting 2,700+ job seekers across 35 district groups in Tamil Nadu, Puducherry & Karnataka.',
-      image: 'gallery/tamilmatrix.jpg',
+      image: 'gallery/tamilmaxtrix.jpg',
     },
     
      {
