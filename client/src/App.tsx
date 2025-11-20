@@ -13,6 +13,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Projects from "@/pages/Projects";
 import ProjectDetail from "@/pages/ProjectDetail";
+import PressAndMedia from "@/pages/PressAndMedia";
 import Gallery from "@/pages/Gallery";
 import Testimonials from "@/pages/Testimonials";
 import Partners from "@/pages/Partners";
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/projects" component={Projects} />
         <Route path="/projects/:id" component={ProjectDetail} />
+        <Route path="/press-media" component={PressAndMedia} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/testimonials" component={Testimonials} />
         <Route path="/partners" component={Partners} />
