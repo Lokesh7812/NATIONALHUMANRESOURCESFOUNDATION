@@ -95,7 +95,7 @@ export default function About() {
       name: 'K. Manikandan', 
       role: 'Trustee', 
       image: '/members/Manikandan.jpg', 
-      bio: 'Former employee at Sony having 5+ years of experience in Training & Development Domain who is passionate in Fitness Training - leading and managing the internal operations of NHRF.' 
+      bio: 'Former employee at Aurobindo Society with over 18 years of experience in Marketing, Placement and Training Development. Passionate about physical training, and currently leading and managing the internal operations of the National Human Resource Foundation (NHRF).' 
     },
     { 
       name: 'V Sivasubramanian', 
@@ -113,7 +113,7 @@ export default function About() {
       name: 'Sunny Dev', 
       role: 'Trustee', 
       image: '/members/sunnny.jpg', 
-      bio: 'Trustee in NHRF.' 
+      bio: 'With an experience of over 18 years; Passionate about redefining emotional intelligence for the modern world. Sunny focus is on leveraging Emotional Intelligence as a tool to SUCCESS.He has trained 350+ master trainers for the education department of AP & Odisha, over 650+ Teachers/facilitators; and 54000+ students on Emotional Intelligence and how to leverage it as a tool for success.Apart from Emotional Intelligence, he is also an NLP Master Pretensioner and an REBT + CBT Counsellor.' 
     },
     { 
       name: 'Vijayaragavan S', 
