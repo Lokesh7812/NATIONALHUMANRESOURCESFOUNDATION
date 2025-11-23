@@ -4,51 +4,40 @@ import { SectionHeader } from '@/components/SectionHeader';
 import { Quote } from 'lucide-react';
 import { FeedbackSection } from '@/components/FeedbackSection';
 
+type Testimonial = {
+  image: string | null;
+  title: string;
+  school: string | null;
+  feedback: string;
+};
+
 export default function Testimonials() {
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
-      quote: "NHRF's sports program has completely transformed our school. Our students are more active, confident, and disciplined. The professional coaching has helped many of our students discover their athletic potential.",
-      author: "Mrs. Priya Sharma",
-      role: "Principal, Government High School",
-      type: "Teacher",
+      image: "/Testinonials/test1.jpg",
+      title: "National Level Boxing Recognition",
+      school: null,
+      feedback: "NHRF has played a major role in shaping my boxing journey. Through Project Sporta, I received structured training, exposure, and the confidence to compete at the national level. This initiative has transformed our environment into a true sports-driven learning space. I'm grateful for the opportunity to grow as an athlete.",
     },
     {
-      quote: "Project SPORTA gave me the opportunity to pursue my passion for football. The training I received helped me get selected for the state-level camp. I'm forever grateful to NHRF for believing in me.",
-      author: "Rahul Kumar",
-      role: "Student, Class 10",
-      type: "Student",
+      image: "/Testinonials/test2.jpg",
+      title: "State Level Inter School Athletic Achievement",
+      school: null,
+      feedback: "Project Sporta gave me the platform and guidance I needed to excel in athletics. The support, coaching, and encouragement from NHRF helped me perform my best at the FSSA State Level Meet. This program has strengthened both my skills and confidence. I'm proud to be part of this initiative.",
     },
     {
-      quote: "As a parent, I've seen remarkable changes in my daughter since she joined the NHRF summer camp. She's more responsible, has better social skills, and most importantly, she stays away from negative influences.",
-      author: "Mr. Anand Reddy",
-      role: "Parent",
-      type: "Parent",
+      image: null,
+      title: "Santhosh – 10th Std",
+      school: "Indhra Gandhi High School",
+      feedback: "Being part of Project Sporta has improved my discipline, fitness, and focus. The training sessions are motivating and push us to grow every day. NHRF has helped me balance sports and academics better. I now feel more confident in pursuing my goals.",
     },
     {
-      quote: "The employment wing helped me secure my first job. The career guidance sessions and interview preparation were invaluable. They truly care about the success of young people.",
-      author: "Anjali Patel",
-      role: "Software Engineer",
-      type: "Student",
-    },
-    {
-      quote: "NHRF's community awareness programs have made a real difference in our neighborhood. The drug awareness campaign was particularly impactful for our youth. Thank you for your dedication.",
-      author: "Dr. Ramesh Iyer",
-      role: "Community Leader",
-      type: "Parent",
-    },
-    {
-      quote: "The skill development workshops conducted by NHRF have equipped our students with practical knowledge. Their holistic approach to education is commendable and much needed.",
-      author: "Prof. Meena Krishnan",
-      role: "College Professor",
-      type: "Teacher",
+      image: null,
+      title: "Karthi – 10th Std",
+      school: "Indhra Gandhi High School",
+      feedback: "Thanks to NHRF and Project Sporta, I discovered my interest in athletics and built better physical strength. The coaches guide us patiently and encourage us to give our best. This program has made sports an exciting part of my school life. It has truly changed the way I look at fitness and competition.",
     },
   ];
-
-  const testimonialsByType = {
-    student: testimonials.filter(t => t.type === 'Student'),
-    teacher: testimonials.filter(t => t.type === 'Teacher'),
-    parent: testimonials.filter(t => t.type === 'Parent'),
-  };
 
   return (
     <div className="min-h-screen pt-20">
@@ -64,7 +53,7 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Student Testimonials */}
+      {/* Testimonials */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
@@ -72,85 +61,39 @@ export default function Testimonials() {
             subtitle="Stories from the students we've empowered"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {testimonialsByType.student.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover-elevate transition-all duration-300 border-card-border">
                 <CardContent className="p-8">
                   <Quote className="h-10 w-10 text-primary/30 mb-4" />
-                  <p className="text-foreground text-lg leading-relaxed mb-6 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={testimonial.author} />
-                      <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold">{testimonial.author}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                  {testimonial.image && (
+                    <div className="mb-6">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.title}
+                        className="w-full h-auto rounded-lg object-cover max-h-[500px]"
+                      />
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Teacher Testimonials */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Educator Perspectives"
-            subtitle="Insights from teachers and professors"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {testimonialsByType.teacher.map((testimonial, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-300 border-card-border">
-                <CardContent className="p-8">
-                  <Quote className="h-10 w-10 text-primary/30 mb-4" />
+                  )}
+                  <h3 className="text-xl font-semibold mb-4">{testimonial.title}</h3>
                   <p className="text-foreground text-lg leading-relaxed mb-6 italic">
-                    "{testimonial.quote}"
+                    "{testimonial.feedback}"
                   </p>
                   <div className="flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={testimonial.author} />
-                      <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
+                    {testimonial.image ? (
+                      <Avatar>
+                        <AvatarImage src={testimonial.image} />
+                        <AvatarFallback>{testimonial.title.split(' ').map(n => n[0]).join('').slice(0, 2)}</AvatarFallback>
+                      </Avatar>
+                    ) : (
+                      <Avatar>
+                        <AvatarFallback>{testimonial.title.split(' ').map(n => n[0]).join('').slice(0, 2)}</AvatarFallback>
+                      </Avatar>
+                    )}
                     <div>
-                      <div className="font-semibold">{testimonial.author}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Parent Testimonials */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Parent Feedback"
-            subtitle="What parents say about our impact"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {testimonialsByType.parent.map((testimonial, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-300 border-card-border">
-                <CardContent className="p-8">
-                  <Quote className="h-10 w-10 text-primary/30 mb-4" />
-                  <p className="text-foreground text-lg leading-relaxed mb-6 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={testimonial.author} />
-                      <AvatarFallback>{testimonial.author.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-semibold">{testimonial.author}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                      <div className="font-semibold">{testimonial.title}</div>
+                      {testimonial.school && (
+                        <div className="text-sm text-muted-foreground">{testimonial.school}</div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
