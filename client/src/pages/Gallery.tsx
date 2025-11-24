@@ -163,7 +163,7 @@ export default function Gallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white font-semibold text-base drop-shadow-lg">{image.alt}</p>
+                    <p className="text-white font-semibold text-base drop-shadow-lg">{image.category}</p>
                   </div>
                 </div>
               </div>
