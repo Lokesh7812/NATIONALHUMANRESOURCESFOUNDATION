@@ -191,7 +191,7 @@ export default function ProjectDetail() {
     'tamil-matrix': {
       title: 'Tamil Matrix',
       subtitle: 'Our Journey Before NHRF - A Digital Movement that Inspired the Birth of NHRF (2019-2020)',
-      description: 'Before establishing the National Human Resource Foundation (NHRF), our social-impact journey began with Tamil Matrix, a youth-led digital initiative created to support job seekers during the challenging pandemic years.',
+      description: 'Before establishing the National Human Resource Foundation (NHRF), our social-impact journey began with Tamil Matrix, a youth-led digital initiative created to support job seekers during the challenging pandemic years. Tamil Matrix created a digital ecosystem connecting over 2,700 job seekers with opportunities, leveraging community networks across 35 districts. The platforms success in technology education and employment awareness demonstrated the power of community-driven solutions and inspired NHRF establishment.',
       fullDescription: `How It All Started
 
 In 2020, during the uncertainties of the global pandemic, a group of young professionals from Puducherry and Tamil Nadu launched Tamil Matrix — a free, community-driven platform focused on:
@@ -258,10 +258,12 @@ The success and social value of Tamil Matrix directly inspired the founding of N
       ],
     },
     'sporta': {
-      title: 'Project SPORTA',
-      subtitle: 'A Flagship Sports Development Initiative - Transforming Schools into Sports-Driven Learning Ecosystems',
-      description: 'Project SPORTA is a flagship sports development initiative by NHRF that transforms schools into sports-driven learning ecosystems, integrating professional sports training with career awareness, drug prevention, and leadership development.',
-      fullDescription: `About NHRF
+  title: 'Project SPORTA',
+  subtitle:
+    'A Flagship Sports Development Initiative – Transforming Schools into Sports-Driven Learning Ecosystems',
+  description:
+    'A comprehensive sports and health initiative focused on holistic youth development in government schools. Operating across 15 government schools in Puducherry, Project SPORTA delivers structured sports training, mentorship, life skills development, and elite athlete pathways. Currently benefiting 1,774 students, the initiative aims to reach one lakh deserving students by 2030, nurturing champions from grassroots to National and Olympic levels.',
+  fullDescription: `About NHRF
 
 The National Human Resource Foundation (NHRF) is a registered NGO (Reg. 2020) based in Puducherry. Our work focuses on Sports & Health, Education, and Employability & Youth Development. We aim to bridge gaps in opportunity and create structured pathways for young people to achieve excellence.
 
@@ -368,10 +370,12 @@ Project SPORTA transforms raw talent into disciplined achievers, taking students
         'Integrate sports + career + drug-free awareness',
       ],
     },
-    'genesis': {
+    'genesis':{
   title: 'Genesis Football Club',
-  subtitle: 'We Fall, We Learn, We Rise — Elite Boys & Girls Football Pathway',
-  description: 'Genesis Football Club is a high-performance boys and girls development club under the sports wing of NHRF, combining elite coaching, holistic athlete care, and professional exposure. This initiative is also dedicated to providing free football training to government school students and rural children.',
+  subtitle:
+    'We Fall, We Learn, We Rise — An Elite Boys & Girls Football Development Pathway',
+  description:
+    'Genesis Football Club is a high-performance boys’ and girls’ football development program under the Sports Wing of the National Human Resource Foundation (NHRF). The club combines elite coaching, holistic athlete care, and professional exposure while operating as a social mission-driven initiative that provides free football training to government school students and rural children across Puducherry and Tamil Nadu.',
   fullDescription: `GENESIS FOOTBALL CLUB
 
 We Fall, We Learn, We Rise...
@@ -477,9 +481,10 @@ Chanakya restores dignity, opportunity, and innovation to public education.`,
       ],
     },
     'employment': {
-      title: 'Employment Wing',
-      subtitle: 'Career Development & Job Placement',
-      description: 'The Employment Wing operates as a comprehensive job network connecting youth with career opportunities across industries. We provide career counseling, skill training, and direct placement support to help young people build successful careers.',
+  title: 'Employment Wing',
+  subtitle: 'Career Development & Job Placement',
+  description:
+    'The Employment Wing functions as a comprehensive career network connecting over one lakh job seekers with employment opportunities across 6,000+ MSME industries. With more than 10,000 youths successfully placed, the wing delivers career counseling, skill development, and direct placement support. Beyond job matching, our approach focuses on long-term career building through continuous mentorship, upskilling, and guidance.',
       fullDescription: 'Our Employment Wing has created a vast network connecting job seekers with employers across various sectors. We conduct regular job fairs at colleges, provide one-on-one career counseling, offer skill development workshops, and maintain an active database of opportunities. Our approach focuses on not just finding jobs, but building careers through continuous support and guidance.',
       image: employmentImg,
       impact: [
@@ -528,10 +533,15 @@ Each school selected one student to carry a cup of clean water and pass it to th
       ],
     },
     'step-out-narco': {
-      title: 'Step Out Narco',
-      subtitle: 'The Modern Satyagraha - The Fight for a Drug-Free Generation',
-      description: 'Step-Out Narco is a comprehensive Drug Prevention and Awareness Initiative designed specifically for government school students. By creating a supportive and inspiring environment, Step Out Narco envisions a generation of students who will step out of the shadows of addiction and step forward into healthy, purpose-driven, and drug-free lives.',
-      fullDescription: `Step-Out Narco is more than an awareness campaign — it is a movement for change, a practical and community-driven response to the critical national issue of drug abuse among youth. The evolution of vulnerability between young individuals and teenagers highlights the importance of nurturing awareness, instilling confidence, and strengthening their ability to make respectful and responsible life decisions.
+  title: 'Step Out Narco',
+  subtitle:
+    'The Modern Satyagraha – A Movement for a Drug-Free Generation',
+  description:
+    'Step Out Narco is a community-driven drug prevention and youth protection initiative addressing the rising substance abuse crisis among school students. More than an awareness program, it is a movement for change that combines education, early intervention, and structured engagement. Through ANSWER (Anti-Narco Squad with Effective Response) teams, the initiative delivers medical screenings, counseling support, sports-based interventions, and safe learning environments for over 400 vulnerable students across two government high schools.',
+  fullDescription: `
+Step Out Narco is a flagship youth protection initiative of the National Human Resource Foundation (NHRF), designed to combat the growing challenge of substance abuse among adolescents through prevention, intervention, and empowerment.
+
+Positioned as a “Modern Satyagraha,” the program emphasizes awareness with action. It addresses the critical period of vulnerability among school-age children by nurturing self-confidence, emotional resilience, and responsible decision-making skills.
 
 OUR MISSION
 

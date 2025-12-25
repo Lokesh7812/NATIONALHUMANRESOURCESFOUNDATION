@@ -12,28 +12,28 @@ export default function About() {
   const timeline = [
     { 
       year: '2019', 
-      title: 'Employment Wing Created', 
-      description: 'Launched the employment wing to connect youth with job opportunities across India.' 
+      title: 'The Beginning', 
+      description: 'Our social-impact journey began with Tamil Matrix, a youth-led digital initiative created to support job seekers during the challenging pandemic years' 
     },
     { 
       year: '2020', 
       title: 'Foundation Established', 
-      description: 'NHRF was formally established with a mission to empower youth and communities.' 
+      description: 'Digital platform scaled to 35 districts, connecting 2,700+ job seekers with opportunities. NHRF Established Registered as NGO, expanding mission on holistic development to empower youth and communities' 
     },
     { 
       year: '2021', 
       title: 'Project SPORTA Launched', 
-      description: 'Introduced structured sports training programs across schools.' 
+      description: 'Project SPORTA offcially launched - Introduced structured sports training programs across schools' 
     },
     { 
       year: '2022', 
       title: 'Expansion Phase', 
-      description: 'Expanded operations, partnerships, and outreach across regions.' 
+      description: 'Expanded operations, partnerships, and outreach across regions - Attained 300+ Volunteer Network. Covered in special Brightside Story Article of The New Indian Express Newspaper' 
     },
     { 
       year: '2023', 
-      title: 'Major Milestones', 
-      description: 'Achieved significant impact with large-scale student participation and outcomes.' 
+      title: 'Strategic Partnerships', 
+      description: 'Strategic Partnerships with Sri Aurobindo Society, India Khelo Football (IKF). TEPOUT NARCO program launched addressing drug crisis' 
     },
     { 
       year: '2024', 
@@ -51,12 +51,53 @@ export default function About() {
 
 
  const objectives = [
-  { icon: Users, title: 'Employment Exchange Hub', description: 'Establish a nationwide Employment Exchange Hub' },
-  { icon: Target, title: 'Job Creation', description: 'Support 5 lakh job seekers by 2030' },
-  { icon: Target, title: 'Sports Excellence', description: 'Train 1 lakh talents in sports by 2030' },
-  
-  { icon: GraduationCap, title: 'School Transformation', description: 'Convert 1,000 schools into Centres of Excellence in sports' },
-  { icon: Heart, title: 'Women Empowerment', description: 'Enable 1,000 women entrepreneurs by 2030' },
+  {
+    icon: Users,
+    title: 'EMPLOYMENT & CAREER GUIDANCE',
+    description:
+      'We connect job seekers with opportunities through employment awareness programs, career counseling, resume-building workshops, and direct placement assistance. Our platform removes barriers to employment by making opportunities accessible to everyone, regardless of their economic background.',
+  },
+  {
+    icon: Target,
+    title: 'SPORTS DEVELOPMENT',
+    description:
+      'Through structured sports training, mentorship programs, and elite athlete pathways, we nurture talent from grassroots to national and international levels. Our programs include National Form-II certifications, life skill development, and connections to professional opportunities in cricket, football, athletics, and other sports.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'EDUCATION & SKILLS',
+    description:
+      'We bridge the knowledge gap through technology education, digital literacy programs, and comprehensive learning resources. Our initiatives include video libraries, community learning groups, and skill development workshops that prepare youth for the demands of modern employment markets.',
+  },
+  {
+    icon: Heart,
+    title: 'HEALTH & WELLNESS',
+    description:
+      'We provide comprehensive health initiatives including preventive care programs, quarterly medical inspections, counseling services, and awareness campaigns addressing critical health challenges facing youth and communities. Our interventions are designed to create supportive environments for vulnerable populations.',
+  },
+];
+
+const impactObjectives = [
+  {
+    icon: TrendingUp,
+    text: 'Support 5 lakh job seekers by 2030',
+  },
+  {
+    icon: Award,
+    text: 'Train 1 lakh talents in sports by 2030',
+  },
+  {
+    icon: Briefcase,
+    text: 'Establish a nationwide Employment Exchange Hub',
+  },
+  {
+    icon: GraduationCap,
+    text: 'Convert 1,000 schools into Centres of Excellence in Sports',
+  },
+  {
+    icon: Heart,
+    text: 'Enable 1,000 women entrepreneurs by 2030',
+  },
 ];
 
 
@@ -152,24 +193,28 @@ export default function About() {
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Support 5 lakh job seekers by 2030</span>
+                  <span className="text-foreground">Holistic Programs -  Integrated initiatives in health,
+sports, education & employment</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Train 1 lakh talents in sports by 2030</span>
+                  <span className="text-foreground">Sustainable Pathways - Long-term opportunities for
+youth from rural and government schools</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Establish a nationwide Employment Exchange Hub</span>
+                  <span className="text-foreground">Culture of Excellence - Building discipline, self-belief, and
+character</span>
                 </li>
                 <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground">Convert 1,000 schools into Centres of Excellence in Sports</span>
+                  <span className="text-foreground">Potential to Performace - Transforming talent into
+achievement through mentorship</span>
                 </li>
-                <li className="flex gap-3">
+                {/* <li className="flex gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-foreground">Enable 1,000 women entrepreneurs by 2030</span>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -181,9 +226,15 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold">Our Vision</h2>
               </div>
               <p className="text-lg text-foreground leading-relaxed">
-                To build our country where every child and youth has access to quality Employability, sports training, education, 
-                skill development, and life-changing opportunities regardless of economic background. We envision 
-                a nation of confident, healthy, and skilled young people who contribute meaningfully to society.
+               To create a society where every individual, regardless of their
+economic background, has access to quality employment,
+health, sports, education, and life-changing opportunities."
+We envision an India where talent is discovered and nurtured
+in every community, where barriers to opportunity are
+dismantled, and where every young person can pursue their
+full potential. Our vision extends beyond individual
+achievement to systemic change - transforming how
+underserved communities access pathways to success.
               </p>
             </div>
           </div>
@@ -232,8 +283,9 @@ export default function About() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
-            title="Our Objectives"
-            subtitle="Guiding principles that drive our mission forward"
+            title="CORE OFFERINGS"
+            subtitle="NHRF delivers impact through four interconnected pillars, each designed to address critical gaps in
+community development and create sustainable pathways for growth and opportunity."
             centered
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
@@ -290,6 +342,36 @@ export default function About() {
           </div>
         </section>
       </ScrollFade>
+{/* Impact Objectives */}
+<ScrollFade>
+  <section className="py-16 md:py-24 bg-muted/30">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <SectionHeader
+        title="OBJECTIVES"
+        subtitle="Measurable goals driving NHRF’s long-term social impact"
+        centered
+      />
+
+      <div className="max-w-4xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {impactObjectives.map((item, index) => (
+          <Card
+            key={index}
+            className="hover-elevate transition-all duration-300 border-card-border"
+          >
+            <CardContent className="p-6 flex items-center gap-4">
+              <div className="rounded-full bg-primary/10 p-3 flex-shrink-0">
+                <item.icon className="h-6 w-6 text-primary" />
+              </div>
+              <p className="text-foreground font-medium leading-relaxed">
+                {item.text}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+</ScrollFade>
 
       {/* Founder Message */}
       <ScrollFade>
@@ -310,7 +392,8 @@ export default function About() {
                       At NHRF, we are committed to breaking barriers and creating pathways for success, regardless of socioeconomic background."
                     </p>
                     <div className="font-semibold">Dr. R. Ravivarman</div>
-                    <div className="text-sm text-muted-foreground">Managing Trustee, NHRF</div>
+                    <div className="text-sm text-muted-foreground">Founder and Chairman of the Board of Trustees
+</div>
                   </div>
                 </div>
               </CardContent>
