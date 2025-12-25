@@ -408,7 +408,7 @@ community development and create sustainable pathways for growth and opportunity
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
-            title="List of Members"
+            title="Board of trustees"
             subtitle="Dedicated professionals driving positive change"
             centered
           />
