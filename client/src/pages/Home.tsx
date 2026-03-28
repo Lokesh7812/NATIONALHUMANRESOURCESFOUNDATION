@@ -95,7 +95,7 @@ export default function Home() {
             <br />
             <span className="text-primary">
               <TypingAnimation 
-                text="Communitied Since 2019" 
+                text=" Communities Since 2019" 
                 speed={80}
                 delay={800}
                 className="inline-block"

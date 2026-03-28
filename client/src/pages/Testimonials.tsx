@@ -15,7 +15,7 @@ export default function Testimonials() {
   const testimonials: Testimonial[] = [
     {
       image: "/Testinonials/test1.jpg",
-      title: "National Level Boxing Recognition",
+      title: "Subshika 9th  STD - National Level Boxing Recognition",
       school: null,
       feedback: "NHRF has played a major role in shaping my boxing journey. Through Project Sporta, I received structured training, exposure, and the confidence to compete at the national level. This initiative has transformed our environment into a true sports-driven learning space. I'm grateful for the opportunity to grow as an athlete.",
     },

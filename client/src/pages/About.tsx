@@ -33,7 +33,7 @@ export default function About() {
     { 
       year: '2023', 
       title: 'Strategic Partnerships', 
-      description: 'Strategic Partnerships with Sri Aurobindo Society, India Khelo Football (IKF). TEPOUT NARCO program launched addressing drug crisis' 
+      description: 'Strategic Partnerships with Sri Aurobindo Society, India Khelo Football (IKF). STEPOUT NARCO program launched addressing drug crisis' 
     },
     { 
       year: '2024', 
@@ -104,7 +104,7 @@ const impactObjectives = [
   const teamMembers = [
     { 
       name: 'Dr. R. Ravivarman', 
-      role: 'Founder & Director', 
+      role: 'Founder & Chairman', 
       image: '/members/ravi.jpg', 
       bio: 'Former IT software techie who holding the Masters & Doctorate in Business Administration having 12+ years of experience in football career and 9+ years of experience in HR management and non-profit industry who visionised to empower students via sports. Managing a trust & football club since 2018.' 
     },
@@ -381,10 +381,10 @@ community development and create sustainable pathways for growth and opportunity
             <Card className="border-card-border">
               <CardContent className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <Avatar className="h-32 w-32 md:h-40 md:w-40 flex-shrink-0">
+                  {/* <Avatar className="h-32 w-32 md:h-40 md:w-40 flex-shrink-0">
                     <AvatarImage src="/members/ravi.jpg" alt="Founder" />
                     <AvatarFallback>RR</AvatarFallback>
-                  </Avatar>
+                  </Avatar> */}
                   <div className="text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Founder's Message</h3>
                     <p className="text-muted-foreground mb-4 italic">
@@ -408,7 +408,7 @@ community development and create sustainable pathways for growth and opportunity
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
-            title="Board of trustees"
+            title="Board of Trustees"
             subtitle="Dedicated professionals driving positive change"
             centered
           />

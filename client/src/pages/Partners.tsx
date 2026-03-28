@@ -16,7 +16,7 @@ export default function Partners() {
     },
     {
       name: 'EATON',
-      description: 'Corporate partner supporting infrastructure and community development',
+      description: 'Corporate partner supporting government schools and infrastructure and community development',
       logo: '/partners/eaton.png',
     },
     {
@@ -26,7 +26,7 @@ export default function Partners() {
     },
     {
       name: 'IKF India',
-      description: 'Indian Kabbadi Federation collaborating in sports training programs',
+      description: 'Indian Kelho football  collaborating in sports training programs',
       logo: '/partners/IKF.png',
     },
     {
@@ -41,7 +41,7 @@ export default function Partners() {
     },
     {
       name: 'PondyCAN',
-      description: 'Pondicherry Cancer Network partnering in health awareness campaigns',
+      description: 'Pondicherry Citizens Action Network partnering in health awareness campaigns',
       logo: '/partners/pondycan.jpg',
     },
     {
