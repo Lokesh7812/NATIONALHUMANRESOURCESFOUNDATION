@@ -27,8 +27,8 @@ export default function Projects() {
       description: 'A digital movement that inspired the birth of NHRF - A youth-led initiative connecting 2,700+ job seekers across 35 district groups in Tamil Nadu, Puducherry & Karnataka.',
       image: 'gallery/tamilmaxtrix.jpg',
     },
-    
-     {
+
+    {
       id: 'employment',
       title: 'Employment Exchange Hub',
       description: 'Job network connecting 10,00,000+ job seekers with 6,000+ MSMEs, placing 20,000+ youth in meaningful careers.',
@@ -46,7 +46,7 @@ export default function Projects() {
       description: 'Flagship sports development initiative transforming 15 Government schools into sports-driven learning ecosystems, training 700+ students (Aged 13–17).',
       image: sportaIcon,
     },
-   
+
     {
       id: 'step-out-narco',
       title: 'Step Out Narco',
@@ -59,7 +59,7 @@ export default function Projects() {
       description: 'Reimagining the future of Government schools through infrastructure, digital learning, and holistic development.',
       image: chanakyaIcon,
     },
-    
+
   ];
 
   const activities = [
@@ -123,25 +123,25 @@ export default function Projects() {
       description: 'Distributing essential stationery to 152 board exam candidates over 3 years, easing educational expenses and inspiring academic excellence.',
       image: schoolDev,
     },
-    
+
     {
       id: 'college-job-fairs',
       title: 'College Job Fairs',
       description: 'Job fairs conducted at 22 colleges connecting students with employers.',
       image: jobFair,
     },
-    {
-      id: 'talent-identification',
-      title: 'Talent Identification Programs',
-      description: 'Discovering and nurturing young talent in sports and academics.',
-      image: talentId,
-    },
-    {
-      id: 'community-awareness',
-      title: 'Community Awareness Drives',
-      description: 'Public awareness campaigns on health, education, and social issues.',
-      image: communityAwareness,
-    },
+    // {
+    //   id: 'talent-identification',
+    //   title: 'Talent Identification Programs',
+    //   description: 'Discovering and nurturing young talent in sports and academics.',
+    //   image: talentId,
+    // },
+    // {
+    //   id: 'community-awareness',
+    //   title: 'Community Awareness Drives',
+    //   description: 'Public awareness campaigns on health, education, and social issues.',
+    //   image: communityAwareness,
+    // },
   ];
 
   return (

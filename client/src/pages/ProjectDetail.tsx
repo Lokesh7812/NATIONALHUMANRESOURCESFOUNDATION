@@ -24,7 +24,7 @@ function FormattedDescription({ text }: { text: string }) {
   const formatText = (text: string): ReactNode[] => {
     const sections: ReactNode[] = [];
     const lines = text.split('\n');
-    
+
     let currentSection: ReactNode[] = [];
     let currentList: { content: string; indent: number }[] = [];
     let currentParagraph: string[] = [];
@@ -83,13 +83,13 @@ function FormattedDescription({ text }: { text: string }) {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
       const trimmed = line.trim();
-      
+
       if (trimmed === '') {
         flushList();
         flushParagraph();
         continue;
       }
-      
+
       // Check if it's a section header
       // Headers are typically: all caps, or title case without ending punctuation
       const isAllCaps = trimmed === trimmed.toUpperCase() && trimmed.length > 2 && trimmed.length < 80;
@@ -98,18 +98,18 @@ function FormattedDescription({ text }: { text: string }) {
       const isShortLine = trimmed.length < 80;
       const nextLine = i < lines.length - 1 ? lines[i + 1].trim() : '';
       const followedByBlankOrBullet = nextLine === '' || nextLine.startsWith('•') || nextLine.match(/^\d+\./);
-      
-      const isHeader = trimmed.length > 0 && 
-        !trimmed.includes('•') && 
+
+      const isHeader = trimmed.length > 0 &&
+        !trimmed.includes('•') &&
         !trimmed.match(/^\d+\./) &&
         (isAllCaps || (startsWithCapital && isShortLine && noEndingPunctuation && followedByBlankOrBullet));
-      
+
       // Check if it's a numbered list item
       const numberedMatch = trimmed.match(/^(\d+)\.\s+(.+)$/);
-      
+
       // Check if it's a bullet point (with or without indentation)
       const bulletMatch = trimmed.match(/^(\s*)•\s*(.+)$/);
-      
+
       // Check if it's a sub-item under numbered list (indented bullet)
       const subItemMatch = trimmed.match(/^(\s{3,})•\s*(.+)$/);
 
@@ -258,12 +258,12 @@ The success and social value of Tamil Matrix directly inspired the founding of N
       ],
     },
     'sporta': {
-  title: 'Project SPORTA',
-  subtitle:
-    'A Flagship Sports Development Initiative – Transforming Schools into Sports-Driven Learning Ecosystems',
-  description:
-    'A comprehensive sports and health initiative focused on holistic youth development in government schools. Operating across 15 government schools in Puducherry, Project SPORTA delivers structured sports training, mentorship, life skills development, and elite athlete pathways. Currently benefiting 1,774 students, the initiative aims to reach one lakh deserving students by 2030, nurturing champions from grassroots to National and Olympic levels.',
-  fullDescription: `About NHRF
+      title: 'Project SPORTA',
+      subtitle:
+        'A Flagship Sports Development Initiative – Transforming Schools into Sports-Driven Learning Ecosystems',
+      description:
+        'A comprehensive sports and health initiative focused on holistic youth development in government schools. Operating across 15 government schools in Puducherry, Project SPORTA delivers structured sports training, mentorship, life skills development, and elite athlete pathways. Currently benefiting 1,774 students, the initiative aims to reach one lakh deserving students by 2030, nurturing champions from grassroots to National and Olympic levels.',
+      fullDescription: `About NHRF
 
 The National Human Resource Foundation (NHRF) is a registered NGO (Reg. 2020) based in Puducherry. Our work focuses on Sports & Health, Education, and Employability & Youth Development. We aim to bridge gaps in opportunity and create structured pathways for young people to achieve excellence.
 
@@ -370,13 +370,13 @@ Project SPORTA transforms raw talent into disciplined achievers, taking students
         'Integrate sports + career + drug-free awareness',
       ],
     },
-    'genesis':{
-  title: 'Genesis Football Club',
-  subtitle:
-    'We Fall, We Learn, We Rise — An Elite Boys & Girls Football Development Pathway',
-  description:
-    'Genesis Football Club is a high-performance boys’ and girls’ football development program under the Sports Wing of the National Human Resource Foundation (NHRF). The club combines elite coaching, holistic athlete care, and professional exposure while operating as a social mission-driven initiative that provides free football training to government school students and rural children across Puducherry and Tamil Nadu.',
-  fullDescription: `GENESIS FOOTBALL CLUB
+    'genesis': {
+      title: 'Genesis Football Club',
+      subtitle:
+        'We Fall, We Learn, We Rise — An Elite Boys & Girls Football Development Pathway',
+      description:
+        'Genesis Football Club is a high-performance boys’ and girls’ football development program under the Sports Wing of the National Human Resource Foundation (NHRF). The club combines elite coaching, holistic athlete care, and professional exposure while operating as a social mission-driven initiative that provides free football training to government school students and rural children across Puducherry and Tamil Nadu.',
+      fullDescription: `GENESIS FOOTBALL CLUB
 
 We Fall, We Learn, We Rise...
 
@@ -424,30 +424,30 @@ PROGRAM STRUCTURE:
 CONTACT & REACH:
 Home Ground: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry Mobile:7904840716 & 99433 91650 | Phone: 0413-2900716`,
 
-  image: sportaImg,
+      image: sportaImg,
 
-  impact: [
-    'Professional training pathway for boys and girls built inside NHRF’s Sports Wing',
-    'Elite coaches plus nutritionists, psychologists, and academic mentors supporting every player',
-    'Weekly schedule that balances intensive training, academics, and purposeful recreation',
-    'Performance tracking with regular assessments, feedback, and personalized growth plans',
-    'Quarterly parental engagement to align training, academics, and wellbeing goals',
-    'Strategic facility partnerships granting access to state-of-the-art training turfs',
-    'Free football training and development programs dedicated to government school and rural children',
-    'Community-driven model involving volunteers, former players, and local support',
-  ],
+      impact: [
+        'Professional training pathway for boys and girls built inside NHRF’s Sports Wing',
+        'Elite coaches plus nutritionists, psychologists, and academic mentors supporting every player',
+        'Weekly schedule that balances intensive training, academics, and purposeful recreation',
+        'Performance tracking with regular assessments, feedback, and personalized growth plans',
+        'Quarterly parental engagement to align training, academics, and wellbeing goals',
+        'Strategic facility partnerships granting access to state-of-the-art training turfs',
+        'Free football training and development programs dedicated to government school and rural children',
+        'Community-driven model involving volunteers, former players, and local support',
+      ],
 
-  beneficiaries: 'Highly talented and committed boys and girls — including government school and rural students — seeking structured, high-performance football training with holistic academic and personal development.',
+      beneficiaries: 'Highly talented and committed boys and girls — including government school and rural students — seeking structured, high-performance football training with holistic academic and personal development.',
 
-  objectives: [
-    'Establish partnerships with 50 private and government schools by 2030 to expand scouting and access',
-    'Develop and refine age- and skill-specific training curriculum modules',
-    'Sustain a 90% satisfaction score among players, parents, and partner schools',
-    'Deliver holistic athlete care spanning coaching, nutrition, psychology, and academics',
-    'Expand free rural and government school sports development programs',
-    'Create partnership opportunities with elite football clubs and sports organizations',
-  ],
-},
+      objectives: [
+        'Establish partnerships with 50 private and government schools by 2030 to expand scouting and access',
+        'Develop and refine age- and skill-specific training curriculum modules',
+        'Sustain a 90% satisfaction score among players, parents, and partner schools',
+        'Deliver holistic athlete care spanning coaching, nutrition, psychology, and academics',
+        'Expand free rural and government school sports development programs',
+        'Create partnership opportunities with elite football clubs and sports organizations',
+      ],
+    },
     'portal-chanakya': {
       title: 'CHANAKYA PORTAL',
       subtitle: 'Reimagining Government Schools infrastructure improvement and comprehensive development (2023, 2024)',
@@ -481,10 +481,10 @@ Chanakya restores dignity, opportunity, and innovation to public education.`,
       ],
     },
     'employment': {
-  title: 'Employment Wing',
-  subtitle: 'Career Development & Job Placement',
-  description:
-    'The Employment Wing functions as a comprehensive career network connecting over one lakh job seekers with employment opportunities across 6,000+ MSME industries. With more than 10,000 youths successfully placed, the wing delivers career counseling, skill development, and direct placement support. Beyond job matching, our approach focuses on long-term career building through continuous mentorship, upskilling, and guidance.',
+      title: 'Employment Wing',
+      subtitle: 'Career Development & Job Placement',
+      description:
+        'The Employment Wing functions as a comprehensive career network connecting over one lakh job seekers with employment opportunities across 6,000+ MSME industries. With more than 10,000 youths successfully placed, the wing delivers career counseling, skill development, and direct placement support. Beyond job matching, our approach focuses on long-term career building through continuous mentorship, upskilling, and guidance.',
       fullDescription: 'Our Employment Wing has created a vast network connecting job seekers with employers across various sectors. We conduct regular job fairs at colleges, provide one-on-one career counseling, offer skill development workshops, and maintain an active database of opportunities. Our approach focuses on not just finding jobs, but building careers through continuous support and guidance.',
       image: employmentImg,
       impact: [
@@ -533,12 +533,12 @@ Each school selected one student to carry a cup of clean water and pass it to th
       ],
     },
     'step-out-narco': {
-  title: 'Step Out Narco',
-  subtitle:
-    'The Modern Satyagraha – A Movement for a Drug-Free Generation',
-  description:
-    'Step Out Narco is a community-driven drug prevention and youth protection initiative addressing the rising substance abuse crisis among school students. More than an awareness program, it is a movement for change that combines education, early intervention, and structured engagement. Through ANSWER (Anti-Narco Squad with Effective Response) teams, the initiative delivers medical screenings, counseling support, sports-based interventions, and safe learning environments for over 400 vulnerable students across two government high schools.',
-  fullDescription: `
+      title: 'Step Out Narco',
+      subtitle:
+        'The Modern Satyagraha – A Movement for a Drug-Free Generation',
+      description:
+        'Step Out Narco is a community-driven drug prevention and youth protection initiative addressing the rising substance abuse crisis among school students. More than an awareness program, it is a movement for change that combines education, early intervention, and structured engagement. Through ANSWER (Anti-Narco Squad with Effective Response) teams, the initiative delivers medical screenings, counseling support, sports-based interventions, and safe learning environments for over 400 vulnerable students across two government high schools.',
+      fullDescription: `
 Step Out Narco is a flagship youth protection initiative of the National Human Resource Foundation (NHRF), designed to combat the growing challenge of substance abuse among adolescents through prevention, intervention, and empowerment.
 
 Positioned as a “Modern Satyagraha,” the program emphasizes awareness with action. It addresses the critical period of vulnerability among school-age children by nurturing self-confidence, emotional resilience, and responsible decision-making skills.
@@ -1084,6 +1084,28 @@ These achievers are living examples of resilience, empowerment, and opportunity.
     );
   }
 
+  const imageMapping: Record<string, string> = {
+    'College Job Fairs': '/REPLACEMENT PHOTOS/66.jpg',
+    'Supporting Board Exam Heroes': '/REPLACEMENT PHOTOS/2.png',
+    'Bolstering Local Champions': '/REPLACEMENT PHOTOS/3.png',
+    'Revolutionizing Football Coaching': '/REPLACEMENT PHOTOS/4.jpg',
+    'From SPORTA to Stardom — IKF Trials': '/REPLACEMENT PHOTOS/5.png',
+    'Career Guidance & Entrepreneurship Development': '/REPLACEMENT PHOTOS/6.png',
+    'Summer Camps of Dreams & Discovery': '/REPLACEMENT PHOTOS/7.png',
+    'Guardians of Green Wealth': '/REPLACEMENT PHOTOS/8.png',
+    'MERO Trophy': '/REPLACEMENT PHOTOS/9.png',
+    'Creating the Next Nelson Mandela': '/REPLACEMENT PHOTOS/10.jpg',
+    'One Drop, One Dream — Neerkudam Water Fest': '/REPLACEMENT PHOTOS/11.png',
+    'CHANAKYA PORTAL': '/REPLACEMENT PHOTOS/12.jpg',
+    'Step Out Narco': '/REPLACEMENT PHOTOS/13.png',
+    'Project SPORTA': '/REPLACEMENT PHOTOS/14.png',
+    'Genesis Football Club': '/REPLACEMENT PHOTOS/15.png',
+    'Tamil Matrix': '/REPLACEMENT PHOTOS/16.png',
+    'Employment Wing': '/REPLACEMENT PHOTOS/1.png',
+  };
+
+  const displayImage = imageMapping[project.title] || project.image;
+
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
       {/* Back Button */}
@@ -1097,8 +1119,8 @@ These achievers are living examples of resilience, empowerment, and opportunity.
           </Link>
         </div>
       </div>
-<br></br>
-<br></br>
+      <br></br>
+      <br></br>
       {/* Project Hero */}
       <section className="relative py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-background w-full">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -1111,7 +1133,7 @@ These achievers are living examples of resilience, empowerment, and opportunity.
             </div>
             <div className="rounded-lg overflow-hidden border border-card-border">
               <img
-                src={project.image}
+                src={displayImage}
                 alt={project.title}
                 className="w-full h-auto"
               />
