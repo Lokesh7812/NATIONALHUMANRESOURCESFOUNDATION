@@ -422,7 +422,10 @@ PROGRAM STRUCTURE:
 • Parental Involvement: Regular updates and quarterly meetings to keep parents informed about their children's development.
 
 CONTACT & REACH:
-Home Ground: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry Mobile:7904840716 & 99433 91650 | Phone: 0413-2900716`,
+Venue 1: Indira Gandhi Government High School Playground, Katterikuppam, Puducherry. 
+
+Venue 2: PAP police ground ,Gorimedu ,Puducherry
+Mobile:7904840716 / 99433 91650 `,
 
       image: sportaImg,
 

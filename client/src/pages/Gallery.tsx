@@ -11,6 +11,7 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedImage, setSelectedImage] = useState<{ url: string; alt: string } | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
 
   const data = galleryData as GalleryData;
   const categories = Object.keys(data);
@@ -45,9 +46,10 @@ export default function Gallery() {
     }))
   );
 
-  const filteredImages = selectedCategory === 'all'
+  const filteredImages = (selectedCategory === 'all'
     ? galleryImages
-    : galleryImages.filter(img => img.category === selectedCategory);
+    : galleryImages.filter(img => img.category === selectedCategory))
+    .filter(img => !failedImages[img.url]);
 
   // Handle image click
   const handleImageClick = (image: { url: string; alt: string }) => {
@@ -155,10 +157,9 @@ export default function Gallery() {
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
                   loading="lazy"
-                  onError={(e) => {
+                  onError={() => {
                     console.error('Failed to load image:', image.url);
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
+                    setFailedImages(prev => ({ ...prev, [image.url]: true }));
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
