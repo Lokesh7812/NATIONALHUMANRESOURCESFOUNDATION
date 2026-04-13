@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { HeroSlider } from '@/components/HeroSlider';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -78,12 +79,8 @@ export default function Home() {
             willChange: 'transform',
           }}
         >
-          <img
-            src="/gallery/hero.png"
-            alt="NHRF Activities"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70" />
+          <HeroSlider />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70 pointer-events-none z-10" />
         </div>
 
         {/* Hero Content with Fade-Up Animation */}
