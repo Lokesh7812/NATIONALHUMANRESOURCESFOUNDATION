@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/gallery/hero.png',
   '/gallery/2.jpg',
   '/gallery/3.jpg',
   '/gallery/12.jpg',
